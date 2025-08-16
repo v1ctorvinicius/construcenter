@@ -1,0 +1,216 @@
+* {
+  margin: 0
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #4a2c2a;
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+.nav {
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1vw;
+  z-index: 2;
+}
+.logo {
+  margin: 0 2vw;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 2vw ;
+  padding: 0;
+}
+.nav-links li {
+  border: 1px solid blue;
+  margin: 0 2vw ;
+}
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #a52a2a;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  padding: 20vh 20px;
+  background: linear-gradient(to bottom, rgba(74, 44, 42, 0.7), transparent);
+}
+.typewriter {
+  font-size: 3.5em;
+  margin: 0;
+  overflow: hidden;
+  border-right: 0.15em solid #a52a2a;
+  white-space: nowrap;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #a52a2a;
+  }
+}
+.hero-content p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+.btn {
+  background-color: #a52a2a;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Sobre a Empresa */
+.sobre {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #d3d3d3;
+}
+.sobre h2 {
+  font-size: 2.5em;
+  color: #4a2c2a;
+}
+.sobre p {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Departamentos */
+.departamentos {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.departamento-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.departamento-card i {
+  font-size: 2em;
+  color: #a52a2a;
+  margin-bottom: 10px;
+}
+.departamento-card h3 {
+  color: #4a2c2a;
+}
+.departamento-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 10px;
+}
+.departamento-card li {
+  margin: 5px 0;
+}
+
+/* Diferenciais */
+.diferenciais {
+  padding: 50px 20px;
+  background-color: #a52a2a;
+  color: #ffffff;
+  text-align: center;
+}
+.diferenciais h2 {
+  font-size: 2.5em;
+}
+.diferenciais ul {
+  list-style: none;
+  padding: 0;
+}
+.diferenciais li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Depoimentos/Equipe */
+.depoimentos {
+  padding: 50px 20px;
+  background-color: #d3d3d3;
+  text-align: center;
+}
+.depoimentos h2 {
+  font-size: 2.5em;
+  color: #4a2c2a;
+}
+.depoimentos p {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* CTA Final */
+.cta-final {
+  padding: 50px 20px;
+  background-color: #4a2c2a;
+  color: #ffffff;
+  text-align: center;
+}
+.cta-final .btn {
+  background-color: #a52a2a;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
