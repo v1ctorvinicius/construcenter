@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construcentro - Nova Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #4A2C2A;
+            background-color: #FFFFFF;
+        }
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 20vh 20px;
+            background: rgba(74, 44, 42, 0.7);
+        }
+        .hero-content h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+        .hero-content p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .hero .btn {
+            background-color: #A52A2A;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        /* Sobre a Empresa */
+        .sobre {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #D3D3D3;
+        }
+        .sobre h2 {
+            font-size: 2.5em;
+            color: #4A2C2A;
+        }
+        .sobre p {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        /* Departamentos */
+        .departamentos {
+            padding: 50px 20px;
+            background-color: #FFFFFF;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .departamento-card {
+            background-color: #F5F5F5;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .departamento-card i {
+            font-size: 2em;
+            color: #A52A2A;
+            margin-bottom: 10px;
+        }
+        .departamento-card h3 {
+            color: #4A2C2A;
+        }
+        .departamento-card ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .departamento-card li {
+            margin: 5px 0;
+        }
+        /* Diferenciais */
+        .diferenciais {
+            padding: 50px 20px;
+            background-color: #A52A2A;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .diferenciais h2 {
+            font-size: 2.5em;
+        }
+        .diferenciais ul {
+            list-style: none;
+            padding: 0;
+        }
+        .diferenciais li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        /* Depoimentos/Equipe */
+        .depoimentos {
+            padding: 50px 20px;
+            background-color: #D3D3D3;
+            text-align: center;
+        }
+        .depoimentos h2 {
+            font-size: 2.5em;
+            color: #4A2C2A;
+        }
+        .depoimentos p {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        /* CTA Final */
+        .cta-final {
+            padding: 50px 20px;
+            background-color: #4A2C2A;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .cta-final .btn {
+            background-color: #A52A2A;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Construcentro</h1>
+            <p>A melhor escolha em materiais de construção há 47 anos. Atendimento especializado para sua obra!</p>
+            <a href="#contato" class="btn">Fale Conosco</a>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section class="sobre">
+        <h2>Sobre a Empresa</h2>
+        <p>A Construcentro começou em 1975 como um depósito de bairro, crescendo para oferecer soluções completas para indústrias, hospitais, hotéis, construtoras e mais. Hoje, com mais de 45 anos, somos referência em confiança, transparência e um portfólio de 15 mil itens, do básico ao acabamento.</p>
+    </section>
+
+    <!-- Departamentos -->
+    <section class="departamentos">
+        <div class="departamento-card">
+            <i class="fas fa-water"></i>
+            <h3>Hidráulica</h3>
+            <ul>
+                <li>Canos e conexões</li>
+                <li>Torneiras e válvulas</li>
+                <li>Bombas d'água</li>
+            </ul>
+        </div>
+        <div class="departamento-card">
+            <i class="fas fa-cube"></i>
+            <h3>Básico</h3>
+            <ul>
+                <li>Cimento</li>
+                <li>Argamassa</li>
+                <li>Tijolos</li>
+            </ul>
+        </div>
+        <div class="departamento-card">
+            <i class="fas fa-plug"></i>
+            <h3>Elétrica</h3>
+            <ul>
+                <li>Fios e cabos</li>
+                <li>Disjuntores</li>
+                <li>Lustres</li>
+            </ul>
+        </div>
+        <div class="departamento-card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Acabamento</h3>
+            <ul>
+                <li>Pisos</li>
+                <li>Metais</li>
+                <li>Tintas</li>
+            </ul>
+        </div>
+        <div class="departamento-card">
+            <i class="fas fa-tools"></i>
+            <h3>Ferramentas</h3>
+            <ul>
+                <li>Martelos</li>
+                <li>Serras</li>
+                <li>Furadeiras</li>
+            </ul>
+        </div>
+        <div class="departamento-card">
+            <i class="fas fa-boxes"></i>
+            <h3>Utilidades</h3>
+            <ul>
+                <li>Impermeabilização</li>
+                <li>Segurança</li>
+                <li>Organização</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="diferenciais">
+        <h2>Nossos Diferenciais</h2>
+        <ul>
+            <li>A melhor empresa de materiais de construção</li>
+            <li>As melhores opções de material com 15 mil itens</li>
+            <li>A melhor escolha para sua obra</li>
+            <li>Entrega rápida e segura</li>
+        </ul>
+    </section>
+
+    <!-- Depoimentos/Equipe -->
+    <section class="depoimentos">
+        <h2>Depoimentos e Equipe</h2>
+        <p>"A Construcentro nos atendeu com a melhor equipe técnica, resolvendo todas as necessidades da nossa obra!" - Cliente satisfeito.</p>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <h2>Seja Parte da Família Construcentro</h2>
+        <p>Com a melhor equipe técnica para atender sua localização e necessidades, priorizando você. Clique e fale conosco!</p>
+        <a href="#contato" class="btn">Solicite Orçamento</a>
+    </section>
+</body>
+</html>
