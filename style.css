@@ -479,3 +479,43 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Marcas */
+.marcas {
+  padding: 50px 20px;
+  background-color: #faf5f0;
+  text-align: center;
+}
+
+.marcas h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #4a2c2a;
+}
+
+.marcas-carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.marcas-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll-marcas 30s linear infinite;
+}
+
+.marcas-track img {
+  height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.marcas-track img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll-marcas {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
