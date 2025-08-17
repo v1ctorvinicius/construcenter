@@ -296,51 +296,162 @@ body {
 /* Diferenciais */
 .diferenciais {
   padding: 50px 20px;
-  background-color: #a52a2a;
-  color: #ffffff;
+  background: #d3d3d3 url('img/concrete-bg.jpg') center/cover no-repeat;
   text-align: center;
+  color: #4a2c2a;
 }
 .diferenciais h2 {
   font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #4a2c2a;
 }
-.diferenciais ul {
-  list-style: none;
-  padding: 0;
+.diferenciais-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.diferenciais li {
-  font-size: 1.2em;
-  margin: 10px 0;
+.diferencial-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.diferencial-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.diferencial-item i {
+  font-size: 3em;
+  color: #a52a2a;
+  margin-bottom: 15px;
+}
+.diferencial-item h3 {
+  font-size: 1.5em;
+  color: #4a2c2a;
+  margin-bottom: 10px;
+}
+.diferencial-item p {
+  font-size: 1em;
+  color: #666;
 }
 
 /* Depoimentos/Equipe */
 .depoimentos {
   padding: 50px 20px;
-  background-color: #d3d3d3;
+  background-color: #ffffff;
   text-align: center;
 }
 .depoimentos h2 {
   font-size: 2.5em;
   color: #4a2c2a;
+  margin-bottom: 40px;
 }
-.depoimentos p {
-  max-width: 800px;
-  margin: 20px auto;
+.depoimentos-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
 }
+.testemunhos-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.testemunho-item {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testemunho-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.testemunho-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.testemunho-item p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.testemunho-item h4 {
+  font-size: 1.2em;
+  color: #4a2c2a;
+}
+.equipe-container {
+  flex: 1;
+  text-align: center;
+}
+.equipe-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.equipe-container h3 {
+  font-size: 1.8em;
+  color: #a52a2a;
+}
+
 
 /* CTA Final */
 .cta-final {
-  padding: 50px 20px;
-  background-color: #4a2c2a;
-  color: #ffffff;
+  padding: 80px 20px;
+  background: url('img/materials-bg.jpg') center/cover no-repeat;
   text-align: center;
-}
-.cta-final .btn {
-  background-color: #a52a2a;
   color: #ffffff;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+  position: relative;
+}
+.cta-final::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(74, 44, 42, 0.7); /* Overlay para legibilidade */
+  z-index: 1;
+}
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.cta-content h2 {
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.cta-content h3 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.cta-content .btn {
+  background-color: #a52a2a;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta-content .btn:hover {
+  background-color: #cf4840;
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

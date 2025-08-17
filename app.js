@@ -27,7 +27,7 @@ function animateNumber(stat) {
   let count = 0;
   const duration = 2000;
   const step = target / (duration / 16); // Aproximadamente 60 FPS
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     const interval = setInterval(() => {
       if (count < target) {
         count += step;
@@ -48,33 +48,63 @@ window.addEventListener("DOMContentLoaded", () => {
   // Inicializa ScrollReveal
   const sr = ScrollReveal({
     delay: 200,
-    distance: '50px',
+    distance: "50px",
     duration: 1000,
-    easing: 'ease-in-out',
-    origin: 'bottom',
+    easing: "ease-in-out",
+    origin: "bottom",
     interval: 200,
-    once: true
+    once: true,
   });
 
   // Aplica ScrollReveal e animação dos números
-  sr.reveal('.sobre .sobre-left', { delay: 200 });
-  sr.reveal('.sobre .sobre-right', { delay: 400 });
-  sr.reveal('.sobre .stats .stat-item', {
+  sr.reveal(".sobre .sobre-left", { delay: 200 });
+  sr.reveal(".sobre .sobre-right", { delay: 400 });
+  sr.reveal(".sobre .stats .stat-item", {
     delay: 600,
     interval: 200,
     beforeReveal: (el) => {
-      const stat = el.querySelector('.stat-number');
+      const stat = el.querySelector(".stat-number");
       animateNumber(stat).then(() => {
-        console.log(`Animação de ${stat.getAttribute('data-target')} concluída!`);
+        console.log(
+          `Animação de ${stat.getAttribute("data-target")} concluída!`
+        );
       });
-    }
+    },
   });
 
   // Animação para os cards de departamentos
-  sr.reveal('.departamento-card', {
+  sr.reveal(".departamento-card", {
     delay: 200,
     interval: 150,
-    origin: 'bottom',
-    distance: '30px'
+    origin: "bottom",
+    distance: "30px",
+  });
+
+  // Animação para os itens de diferenciais
+  sr.reveal(".diferencial-item", {
+    delay: 200,
+    interval: 150,
+    origin: "bottom",
+    distance: "30px",
+  });
+
+  // Animação para os depoimentos e equipe
+  sr.reveal(".testemunho-item", {
+    delay: 200,
+    interval: 150,
+    origin: "left",
+    distance: "30px",
+  });
+  sr.reveal(".equipe-container", {
+    delay: 200,
+    origin: "right",
+    distance: "30px",
+  });
+
+  // Animação para o CTA final
+  sr.reveal(".cta-content", {
+    delay: 200,
+    origin: "bottom",
+    distance: "50px",
   });
 });
