@@ -41,7 +41,7 @@ function animateNumber(stat) {
   });
 }
 
-// Configuração do ScrollReveal para a seção Sobre a Empresa
+// Configuração do ScrollReveal para as seções
 window.addEventListener("DOMContentLoaded", () => {
   playNextVideo();
 
@@ -52,14 +52,13 @@ window.addEventListener("DOMContentLoaded", () => {
     duration: 1000,
     easing: 'ease-in-out',
     origin: 'bottom',
-    interval: 200, // Atraso entre os elementos
-    once: true // Garante que a animação ocorra apenas uma vez
+    interval: 200,
+    once: true
   });
 
   // Aplica ScrollReveal e animação dos números
   sr.reveal('.sobre .sobre-left', { delay: 200 });
   sr.reveal('.sobre .sobre-right', { delay: 400 });
-
   sr.reveal('.sobre .stats .stat-item', {
     delay: 600,
     interval: 200,
@@ -69,5 +68,13 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log(`Animação de ${stat.getAttribute('data-target')} concluída!`);
       });
     }
+  });
+
+  // Animação para os cards de departamentos
+  sr.reveal('.departamento-card', {
+    delay: 200,
+    interval: 150,
+    origin: 'bottom',
+    distance: '30px'
   });
 });
