@@ -111,7 +111,8 @@ body {
   animation: float 2s ease-in-out infinite;
 }
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -122,8 +123,8 @@ body {
 /* Sobre a Empresa */
 .sobre {
   padding: 50px 20px;
-  background: linear-gradient(135deg, #612A30, #A52A2A);
-  color: #FAF5F0;
+  background: linear-gradient(135deg, #612a30, #a52a2a);
+  color: #faf5f0;
   position: relative;
   overflow: hidden;
 }
@@ -134,7 +135,8 @@ body {
   margin: 0 auto;
   flex-wrap: wrap;
 }
-.sobre-left, .sobre-right {
+.sobre-left,
+.sobre-right {
   display: flex;
   text-align: justify;
   flex-direction: column;
@@ -173,7 +175,7 @@ body {
   display: flex;
   justify-content: space-around;
   max-width: 800px;
-  background-color: #FAF5F0;
+  background-color: #faf5f0;
   color: white;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -184,11 +186,11 @@ body {
 .stat-number {
   font-size: 2.5em;
   font-weight: bold;
-  color: #A52A2A;
+  color: #a52a2a;
 }
 .stat-item p {
   font-size: 1em;
-  color: #4A2C2A;
+  color: #4a2c2a;
 }
 .sobre-gallery {
   display: grid;
@@ -232,11 +234,12 @@ body {
 /* Departamentos */
 .departamentos {
   padding: 50px 20px;
-  background-color: #FEF9F3;
+  background-color: #fef9f3;
   text-align: center;
 }
 .departamentos h2 {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  margin-bottom: 5vh;
   color: #4a2c2a;
 }
 .departamentos-container {
@@ -295,14 +298,14 @@ body {
 /* Diferenciais */
 .diferenciais {
   padding: 50px 20px;
-  background: #d3d3d3 url('img/concrete-bg.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, #612a30, #a52a2a);
   text-align: center;
   color: #4a2c2a;
 }
 .diferenciais h2 {
   font-size: 2.5em;
   margin-bottom: 40px;
-  color: #4a2c2a;
+  color: #cf4840;
 }
 .diferenciais-container {
   display: grid;
@@ -406,22 +409,25 @@ body {
   color: #a52a2a;
 }
 
-
 /* CTA Final */
 .cta-final {
   padding: 100px 20px;
-  background: url('img/materials-bg.jpg') center/cover no-repeat fixed;
+  background: url("img/materials-bg.jpg") center/cover no-repeat fixed;
   position: relative;
   overflow: hidden;
 }
 .cta-final::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(74, 44, 42, 0.8), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    135deg,
+    rgba(74, 44, 42, 0.8),
+    rgba(0, 0, 0, 0.6)
+  );
   z-index: 1;
 }
 .cta-content {
