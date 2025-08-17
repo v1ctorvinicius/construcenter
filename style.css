@@ -133,7 +133,6 @@ body {
   padding: 50px 20px;
   background: linear-gradient(135deg, #612A30, #A52A2A);
   color: #FAF5F0;
-  border: 2px solid red;
   position: relative;
   overflow: hidden;
 }
@@ -204,6 +203,57 @@ body {
   font-size: 1em;
   color: #4A2C2A;
 }
+
+.sobre-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sobre-gallery-item {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* garante quadrado */
+  border-radius: 25%; /* deixa bordas arredondadas estilo mockup */
+  object-fit: cover;  
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Primeiro item da galeria */
+.sobre-gallery img:first-child {
+  /* border: 3px solid red; */
+  width: 13vw;
+  align-self: end;
+  justify-self: end;
+}
+
+/* Segundo item da galeria */
+.sobre-gallery img:nth-child(2) {
+  /* border: 3px solid blue; */
+  width: 15vw;
+  align-self: end;
+  justify-self: start;
+  
+}
+
+/* Terceiro item */
+.sobre-gallery img:nth-child(3) {
+  /* border: 3px solid green; */
+  width: 15vw;
+  align-self: start;
+  justify-self: end;
+  object-fit:fill;
+
+}
+
+/* Quarto item */
+.sobre-gallery img:nth-child(4) {
+  /* border: 3px solid orange; */
+  width: 18vw;
+  align-self: start;
+  justify-self: start;
+}
+
 
 /* Departamentos */
 .departamentos {
@@ -286,4 +336,10 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .sobre-gallery {
+    grid-template-columns: 1fr;
+  }
 }
