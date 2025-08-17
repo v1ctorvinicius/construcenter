@@ -131,18 +131,70 @@ body {
 /* Sobre a Empresa */
 .sobre {
   padding: 50px 20px;
-  text-align: center;
-  background-color: #612A30;
+  background: linear-gradient(135deg, #612A30, #A52A2A);
+  color: #FAF5F0;
+  position: relative;
+  overflow: hidden;
 }
-.sobre h2 {
+.sobre-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.sobre-left, .sobre-right {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+}
+.sobre-left h2 {
   font-size: 2.5em;
-  color: #FAF5F0;
+  margin-bottom: 20px;
 }
-.sobre p {
-  max-width: 800px;
-  margin: 20px auto;
+.sobre-left p {
   font-size: 1.2em;
-  color: #FAF5F0;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.sobre-right h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+.sobre-right p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+.sobre-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.sobre-bottom {
+  padding: 40px 20px;
+  background-color: #FAF5F0;
+  text-align: center;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.stat-item {
+  margin: 20px;
+}
+.stat-number {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #A52A2A;
+}
+.stat-item p {
+  font-size: 1em;
+  color: #4A2C2A;
 }
 
 /* Departamentos */
