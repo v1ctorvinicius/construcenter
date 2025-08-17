@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -759,6 +760,12 @@ body {
 
 /* Responsividade Global */
 @media (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
   /* Navbar */
   .nav {
     flex-direction: row;
@@ -794,13 +801,17 @@ body {
 
   /* Hero */
   .hero {
-    height: 80vh;
+    height: 100vh;
+    min-height: 92vh;
+    box-sizing: border-box;
   }
   .typewriter {
     font-size: 1.8em;
-    border-right: none;
     width: 90vw;
+    border-right: 0.1em solid #a52a2a; /* Restore cursor */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
   }
+
   .hero-content p {
     font-size: 0.9em;
     margin: 10px 15px;
@@ -846,20 +857,32 @@ body {
     font-size: 2em;
   }
   .sobre-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* Restore original 2x2 grid */
     gap: 10px;
   }
   .sobre-gallery img {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%; /* Ensure images scale appropriately */
   }
-  .sobre-gallery img:first-child,
-  .sobre-gallery img:nth-child(2),
-  .sobre-gallery img:nth-child(3),
+  .sobre-gallery img:first-child {
+    width: 30vw;
+    align-self: end;
+    justify-self: end;
+  }
+  .sobre-gallery img:nth-child(2) {
+    width: 35vw;
+    align-self: end;
+    justify-self: start;
+  }
+  .sobre-gallery img:nth-child(3) {
+    width: 35vw;
+    align-self: start;
+    justify-self: end;
+    object-fit: fill;
+  }
   .sobre-gallery img:nth-child(4) {
-    width: 100%;
-    align-self: center;
-    justify-self: center;
+    width: 40vw;
+    align-self: start;
+    justify-self: start;
   }
 
   /* Departamentos */
@@ -1038,6 +1061,7 @@ body {
   .typewriter {
     font-size: 1.5em;
     width: 95vw;
+    border-right: 0.08em solid #a52a2a; /* Adjust cursor size for smaller screens */
   }
   .hero-content p {
     font-size: 0.8em;
@@ -1060,6 +1084,18 @@ body {
   }
   .stat-number {
     font-size: 1.8em;
+  }
+  .sobre-gallery img:first-child {
+    width: 35vw;
+  }
+  .sobre-gallery img:nth-child(2) {
+    width: 40vw;
+  }
+  .sobre-gallery img:nth-child(3) {
+    width: 40vw;
+  }
+  .sobre-gallery img:nth-child(4) {
+    width: 45vw;
   }
 
   /* Departamentos */
