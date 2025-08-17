@@ -73,7 +73,7 @@ body {
   z-index: 1;
   text-align: center;
   color: #ffffff;
-  padding: 20vh 20px;
+  padding: 5vh 0;
   /* background: linear-gradient(to bottom, rgba(74, 44, 42, 0.7), transparent); */
 }
 .typewriter {
@@ -107,15 +107,17 @@ body {
   margin: 20px 0;
 }
 .btn {
-  background-color: #a52a2a;
+  background-color: #cf4840;
   color: #ffffff;
-  padding: 15px 30px;
+  padding: 2vh 3vw;
+  margin: 1vh 0 0 0;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   display: inline-block;
   animation: float 2s ease-in-out infinite;
 }
+
 @keyframes float {
   0%,
   100% {
@@ -130,21 +132,23 @@ body {
 .sobre {
   padding: 50px 20px;
   text-align: center;
-  background-color: #d3d3d3;
+  background-color: #612A30;
 }
 .sobre h2 {
   font-size: 2.5em;
-  color: #4a2c2a;
+  color: #FAF5F0;
 }
 .sobre p {
   max-width: 800px;
   margin: 20px auto;
+  font-size: 1.2em;
+  color: #FAF5F0;
 }
 
 /* Departamentos */
 .departamentos {
   padding: 50px 20px;
-  background-color: #ffffff;
+  background-color: #FEF9F3;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
