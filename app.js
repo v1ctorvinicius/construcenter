@@ -107,4 +107,18 @@ window.addEventListener("DOMContentLoaded", () => {
     origin: "bottom",
     distance: "50px",
   });
+
+  // Animação do contato
+  sr.reveal(".contato-container", {
+    delay: 200,
+    origin: "bottom",
+    distance: "50px",
+  });
+
+  // Animação do mapa
+  sr.reveal(".mapa-container", {
+    delay: 200,
+    origin: "bottom",
+    distance: "50px",
+  });
 });
