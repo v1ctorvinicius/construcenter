@@ -12,7 +12,7 @@ body {
 
 /* Hero Section */
 .hero {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .nav {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   /* position: absolute; */
   top: 0;
   width: 100%;
@@ -65,7 +65,7 @@ body {
   color: #a52a2a;
 }
 .hero-content {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -74,7 +74,7 @@ body {
   text-align: center;
   color: #ffffff;
   padding: 20vh 20px;
-  background: linear-gradient(to bottom, rgba(74, 44, 42, 0.7), transparent);
+  /* background: linear-gradient(to bottom, rgba(74, 44, 42, 0.7), transparent); */
 }
 .typewriter {
   display: inline-block;
