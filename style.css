@@ -133,6 +133,7 @@ body {
   padding: 50px 20px;
   background: linear-gradient(135deg, #612A30, #A52A2A);
   color: #FAF5F0;
+  border: 2px solid red;
   position: relative;
   overflow: hidden;
 }
@@ -144,8 +145,12 @@ body {
   flex-wrap: wrap;
 }
 .sobre-left, .sobre-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
   flex: 1;
-  padding: 20px;
+  padding: 2vw;
   min-width: 300px;
 }
 .sobre-left h2 {
@@ -167,22 +172,25 @@ body {
 }
 .sobre-image {
   width: 100%;
-  height: auto;
+  /* height: 80%; */
   border-radius: 10px;
   margin-top: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.sobre-bottom {
-  padding: 40px 20px;
-  background-color: #FAF5F0;
+.sobre-left-intern {
+  /* border: 2px solid blue; */
   text-align: center;
 }
 .stats {
+  /* border: 2px solid green; */
   display: flex;
   justify-content: space-around;
   max-width: 800px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  background-color: #FAF5F0;
+  /* flex-wrap: wrap; */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .stat-item {
   margin: 20px;
