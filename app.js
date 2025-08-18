@@ -1,37 +1,4 @@
-// Lista de vídeos para o hero
-const videos = [
-  "img/hero-video-3.mp4",
-  "img/hero-video-4.mp4",
-  "img/hero-video-5.mp4",
-  "img/hero-video-1.mp4",
-  "img/hero-video-0.mp4",
-  "img/hero-video-2.mp4",
-];
-
 const videoElement = document.getElementById("bg-video");
-let currentVideo = 0;
-
-function playNextVideo() {
-  videoElement.src = videos[currentVideo];
-  videoElement.play();
-
-  videoElement.onended = function () {
-    currentVideo = (currentVideo + 1) % videos.length;
-
-    // cria um vídeo temporário para pré-carregar o próximo
-    const nextVideo = document.createElement("video");
-    nextVideo.src = videos[currentVideo];
-    nextVideo.muted = true;
-    nextVideo.playsInline = true;
-
-    // quando estiver pronto, troca sem dar tela preta
-    nextVideo.addEventListener("canplaythrough", () => {
-      videoElement.src = nextVideo.src;
-      videoElement.play();
-    });
-  };
-}
-
 
 // Função para animar os números
 function animateNumber(stat) {
@@ -55,8 +22,6 @@ function animateNumber(stat) {
 
 // Configuração do ScrollReveal para as seções
 window.addEventListener("DOMContentLoaded", () => {
-  playNextVideo();
-
   // Inicializa ScrollReveal
   const sr = ScrollReveal({
     delay: 200,
@@ -135,8 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-// slideshow da equipe
+// Slideshow da equipe
 const equipeImgs = document.querySelectorAll(".equipe-slideshow .equipe-image");
 let equipeIndex = 0;
 
@@ -146,4 +110,4 @@ function showNextEquipe() {
   equipeImgs[equipeIndex].classList.add("active");
 }
 
-setInterval(showNextEquipe, 4000); // troca a cada 4s
+setInterval(showNextEquipe, 4000); // Troca a cada 4s
