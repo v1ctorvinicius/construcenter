@@ -16,10 +16,22 @@ function playNextVideo() {
   videoElement.play();
 
   videoElement.onended = function () {
-    currentVideo = (currentVideo + 1) % videos.length; // volta ao início quando terminar
-    playNextVideo();
+    currentVideo = (currentVideo + 1) % videos.length;
+
+    // cria um vídeo temporário para pré-carregar o próximo
+    const nextVideo = document.createElement("video");
+    nextVideo.src = videos[currentVideo];
+    nextVideo.muted = true;
+    nextVideo.playsInline = true;
+
+    // quando estiver pronto, troca sem dar tela preta
+    nextVideo.addEventListener("canplaythrough", () => {
+      videoElement.src = nextVideo.src;
+      videoElement.play();
+    });
   };
 }
+
 
 // Função para animar os números
 function animateNumber(stat) {
