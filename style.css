@@ -1,9 +1,7 @@
 * {
   margin: 0;
-  box-sizing: border-box;
 }
 
-html,
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
@@ -11,8 +9,6 @@ body {
   padding: 0;
   color: #4a2c2a;
   background-color: #ffffff;
-  overflow-x: hidden;
-  max-width: 100%;
   position: relative;
 }
 
@@ -37,7 +33,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
   z-index: 1;
 }
 .hero video {
@@ -383,7 +379,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 .diferencial-item h3 {
   font-size: 1.5em;
@@ -485,7 +481,7 @@ body {
   min-height: 45vh;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 .equipe-slideshow .equipe-image {
   position: absolute;
@@ -713,7 +709,7 @@ body {
 .contato-form input:focus,
 .contato-form textarea:focus {
   border-color: #cf4840;
-  box-shadow: 0 0 0 3px rgba(207, 72, 64, 0.15);
+  box-shadow: 0 0 0 3px rgba(207,72,64,0.15);
   outline: none;
 }
 .form-group input:focus + label,
@@ -785,7 +781,7 @@ body {
   font-size: 0.95em;
 }
 .footer-container {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
   padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1074,6 +1070,14 @@ body {
   .depoimentos-container {
     flex-direction: column;
   }
+  .testemunhos-grid{
+    width: 100%;
+    border: 1px solid blue;
+  }
+  .equipe-container{
+    width: 100%;
+  }
+  
   .testemunho-item {
     padding: 15px;
   }
