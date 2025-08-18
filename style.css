@@ -19,6 +19,16 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+  z-index: 1;
+}
 .hero video {
   position: absolute;
   top: 50%;
@@ -65,10 +75,23 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   color: #ffffff;
   padding: 5vh 0;
+}
+.hero-content .btn {
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 1.1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-content .btn::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 .typewriter {
   display: inline-block;
@@ -185,9 +208,14 @@ body {
   margin: 20px;
 }
 .stat-number {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #a52a2a;
+  font-size: 2.8em;
+  font-weight: 800;
+  color: #cf4840;
+  transition: all 0.5s ease;
+}
+.stat-item:hover .stat-number {
+  transform: scale(1.1);
+  color: #911c16;
 }
 .stat-item p {
   font-size: 1em;
@@ -251,15 +279,23 @@ body {
   margin: 0 auto;
 }
 .departamento-card {
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 20px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 .departamento-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.02);
+  border-color: #cf4840;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.departamento-card img {
+  transition: transform 0.4s ease;
+}
+.departamento-card:hover img {
+  transform: scale(1.05);
 }
 .departamento-card i {
   font-size: 2.5em;
@@ -327,9 +363,16 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .diferencial-item i {
-  font-size: 3em;
-  color: #a52a2a;
-  margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a52a2a, #cf4840);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 .diferencial-item h3 {
   font-size: 1.5em;
@@ -361,17 +404,30 @@ body {
 }
 .testemunhos-grid {
   flex: 1;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
   gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 .testemunho-item {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  position: relative;
   background: #fff;
   border-radius: 15px;
   padding: 25px;
   border: 1px solid #eee;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
+}
+.testemunho-item::before {
+  content: "\201C";
+  font-size: 4em;
+  color: #cf4840;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  opacity: 0.2;
 }
 .testemunho-item:hover {
   transform: translateY(-8px) scale(1.02);
@@ -400,7 +456,6 @@ body {
 }
 .equipe-image {
   width: 100%;
-  /* height: 20vh; */
   max-height: 45vh;
   min-height: 45vh;
   object-fit: cover;
@@ -412,7 +467,6 @@ body {
   font-size: 1.8em;
   color: #a52a2a;
 }
-
 .equipe-slideshow {
   position: relative;
   width: 100%;
@@ -424,8 +478,10 @@ body {
 }
 .equipe-slideshow .equipe-image {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -434,8 +490,6 @@ body {
   opacity: 1;
   position: relative;
 }
-
-
 
 /* CTA Final */
 .cta-final {
@@ -647,10 +701,15 @@ body {
 }
 .contato-form input:focus,
 .contato-form textarea:focus {
-  border-color: #a52a2a;
-  background: #fff;
-  box-shadow: 0 0 0 3px rgba(165, 42, 42, 0.15);
+  border-color: #cf4840;
+  box-shadow: 0 0 0 3px rgba(207,72,64,0.15);
   outline: none;
+}
+.form-group input:focus + label,
+.form-group textarea:focus + label {
+  color: #a52a2a;
+  transform: translateY(-18px);
+  font-size: 0.8em;
 }
 .checkbox-group {
   flex-direction: row;
@@ -709,12 +768,14 @@ body {
 
 /* Footer */
 .footer {
-  background: #000;
+  background: linear-gradient(180deg, #111, #000);
   color: #ddd;
   padding: 60px 20px 20px;
   font-size: 0.95em;
 }
 .footer-container {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
@@ -734,14 +795,12 @@ body {
 .footer-contato h3,
 .footer-social h3 {
   position: relative;
-  display: inline-block; /* garante que a barrinha acompanhe o texto */
+  display: inline-block;
   padding-left: 12px;
   margin-bottom: 15px;
   color: #fff;
   font-size: 1.2em;
 }
-
-/* Barrinha antes do texto */
 .footer-links h3::before,
 .footer-contato h3::before,
 .footer-social h3::before {
@@ -769,7 +828,8 @@ body {
   transition: color 0.3s;
 }
 .footer-links a:hover {
-  color: #cf4840;
+  color: #fff;
+  text-decoration: underline;
 }
 .footer-contato p {
   margin-bottom: 10px;
@@ -790,7 +850,7 @@ body {
 }
 .footer-social a:hover {
   color: #cf4840;
-  transform: scale(1.2);
+  transform: rotate(-5deg) scale(1.2);
 }
 .footer-bottom {
   text-align: center;
@@ -799,6 +859,17 @@ body {
   padding-top: 20px;
   font-size: 0.85em;
   color: #777;
+}
+
+/* Animações de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Responsividade Global */
@@ -863,7 +934,6 @@ body {
       width: 90%;
     }
   }
-
   .hero-content p {
     font-size: 0.9em;
     margin: 10px 15px;
@@ -872,7 +942,6 @@ body {
     padding: 1.5vh 5vw;
     font-size: 0.9em;
   }
-
   /* Sobre */
   .sobre {
     padding: 30px 15px;
@@ -909,11 +978,11 @@ body {
     font-size: 2em;
   }
   .sobre-gallery {
-    grid-template-columns: repeat(2, 1fr); /* Restore original 2x2 grid */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
   .sobre-gallery img {
-    width: 100%; /* Ensure images scale appropriately */
+    width: 100%;
   }
   .sobre-gallery img:first-child {
     width: 30vw;
@@ -936,7 +1005,6 @@ body {
     align-self: start;
     justify-self: start;
   }
-
   /* Departamentos */
   .departamentos {
     padding: 30px 15px;
@@ -958,7 +1026,6 @@ body {
     padding: 8px 15px;
     font-size: 0.9em;
   }
-
   /* Marcas */
   .marcas {
     padding: 30px 15px;
@@ -969,7 +1036,6 @@ body {
   .marcas-track img {
     height: 50px;
   }
-
   /* Diferenciais */
   .diferenciais {
     padding: 30px 15px;
@@ -987,7 +1053,6 @@ body {
   .diferencial-item p {
     font-size: 0.9em;
   }
-
   /* Depoimentos */
   .depoimentos {
     padding: 30px 15px;
@@ -1010,7 +1075,6 @@ body {
   .equipe-container h3 {
     font-size: 1.5em;
   }
-
   /* CTA Final */
   .cta-final {
     padding: 60px 15px;
@@ -1018,7 +1082,6 @@ body {
   .cta-final::before {
     animation: light-move-mobile 6s linear infinite;
   }
-
   @keyframes light-move-mobile {
     0% {
       transform: translate(-80%, -80%) scale(1.2);
@@ -1042,7 +1105,6 @@ body {
     padding: 15px 30px;
     font-size: 1em;
   }
-
   /* Contato */
   .contato {
     padding: 60px 15px;
@@ -1082,7 +1144,6 @@ body {
   .contato-info li {
     font-size: 0.95em;
   }
-
   /* Localização */
   .localizacao {
     padding: 30px 15px;
@@ -1096,7 +1157,6 @@ body {
   .mapa-container iframe {
     height: 300px;
   }
-
   /* Footer */
   .footer {
     padding: 40px 15px 15px;
@@ -1109,28 +1169,27 @@ body {
   .footer-logo img {
     width: 140px;
   }
-.footer-links h3,
-.footer-contato h3,
-.footer-social h3 {
-  position: relative;
-  display: inline-block; /* garante que a barrinha acompanhe o texto */
-  padding-left: 12px;
-  margin: 0 auto 15px; /* centraliza no mobile */
-}
-
-.footer-links h3::before,
-.footer-contato h3::before,
-.footer-social h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 4px;
-  height: 70%;
-  background-color: #a52a2a;
-  border-radius: 2px;
-}
+  .footer-links h3,
+  .footer-contato h3,
+  .footer-social h3 {
+    position: relative;
+    display: inline-block;
+    padding-left: 12px;
+    margin: 0 auto 15px;
+  }
+  .footer-links h3::before,
+  .footer-contato h3::before,
+  .footer-social h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background-color: #a52a2a;
+    border-radius: 2px;
+  }
   .footer-social .social-icons {
     justify-content: center;
   }
@@ -1145,7 +1204,7 @@ body {
   .typewriter {
     font-size: 1.5em;
     width: 95vw;
-    border-right: 0.08em solid #a52a2a; /* Adjust cursor size for smaller screens */
+    border-right: 0.08em solid #a52a2a;
   }
   .hero-content p {
     font-size: 0.8em;
@@ -1155,7 +1214,6 @@ body {
     padding: 1vh 4vw;
     font-size: 0.8em;
   }
-
   /* Sobre */
   .sobre {
     padding: 20px 10px;
@@ -1181,7 +1239,6 @@ body {
   .sobre-gallery img:nth-child(4) {
     width: 45vw;
   }
-
   /* Departamentos */
   .departamentos {
     padding: 20px 10px;
@@ -1192,7 +1249,6 @@ body {
   .departamento-card h3 {
     font-size: 1.3em;
   }
-
   /* Marcas */
   .marcas {
     padding: 20px 10px;
@@ -1203,7 +1259,6 @@ body {
   .marcas-track img {
     height: 40px;
   }
-
   /* Diferenciais */
   .diferenciais {
     padding: 20px 10px;
@@ -1214,7 +1269,6 @@ body {
   .diferencial-item h3 {
     font-size: 1.2em;
   }
-
   /* Depoimentos */
   .depoimentos {
     padding: 20px 10px;
@@ -1225,7 +1279,6 @@ body {
   .equipe-container h3 {
     font-size: 1.3em;
   }
-
   /* CTA Final */
   .cta-final {
     padding: 40px 10px;
@@ -1240,7 +1293,6 @@ body {
     padding: 12px 25px;
     font-size: 0.9em;
   }
-
   /* Contato */
   .contato {
     padding: 40px 10px;
@@ -1254,7 +1306,6 @@ body {
   .contato-info {
     padding: 15px;
   }
-
   /* Localização */
   .localizacao {
     padding: 20px 10px;
@@ -1265,7 +1316,6 @@ body {
   .mapa-container iframe {
     height: 250px;
   }
-
   /* Footer */
   .footer {
     padding: 30px 10px 10px;
