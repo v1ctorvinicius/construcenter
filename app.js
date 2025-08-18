@@ -27,7 +27,6 @@ function playNextVideo() {
     // quando estiver pronto, troca sem dar tela preta
     nextVideo.addEventListener("canplaythrough", () => {
       videoElement.src = nextVideo.src;
-      videoElement.currentTime = 0;
       videoElement.play();
     });
   };
