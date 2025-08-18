@@ -122,3 +122,16 @@ window.addEventListener("DOMContentLoaded", () => {
     distance: "50px",
   });
 });
+
+
+// slideshow da equipe
+const equipeImgs = document.querySelectorAll(".equipe-slideshow .equipe-image");
+let equipeIndex = 0;
+
+function showNextEquipe() {
+  equipeImgs[equipeIndex].classList.remove("active");
+  equipeIndex = (equipeIndex + 1) % equipeImgs.length;
+  equipeImgs[equipeIndex].classList.add("active");
+}
+
+setInterval(showNextEquipe, 4000); // troca a cada 4s

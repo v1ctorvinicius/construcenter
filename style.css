@@ -366,21 +366,22 @@ body {
   gap: 20px;
 }
 .testemunho-item {
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid #eee;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .testemunho-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 .testemunho-avatar {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  object-fit: cover;
+  border: 3px solid #a52a2a;
   margin-bottom: 15px;
 }
 .testemunho-item p {
@@ -399,7 +400,9 @@ body {
 }
 .equipe-image {
   width: 100%;
-  max-height: 400px;
+  /* height: 20vh; */
+  max-height: 45vh;
+  min-height: 45vh;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -409,6 +412,30 @@ body {
   font-size: 1.8em;
   color: #a52a2a;
 }
+
+.equipe-slideshow {
+  position: relative;
+  width: 100%;
+  max-height: 45vh;
+  min-height: 45vh;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.equipe-slideshow .equipe-image {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.equipe-slideshow .equipe-image.active {
+  opacity: 1;
+  position: relative;
+}
+
+
 
 /* CTA Final */
 .cta-final {
@@ -482,7 +509,7 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 .cta-btn:hover {
-  background: #cf4840;
+  background: #911c16;
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
@@ -706,11 +733,27 @@ body {
 .footer-links h3,
 .footer-contato h3,
 .footer-social h3 {
-  color: #fff;
+  position: relative;
+  display: inline-block; /* garante que a barrinha acompanhe o texto */
+  padding-left: 12px;
   margin-bottom: 15px;
+  color: #fff;
   font-size: 1.2em;
-  border-left: 4px solid #a52a2a;
-  padding-left: 8px;
+}
+
+/* Barrinha antes do texto */
+.footer-links h3::before,
+.footer-contato h3::before,
+.footer-social h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  background-color: #a52a2a;
+  border-radius: 2px;
 }
 .footer-links ul {
   list-style: none;
@@ -972,6 +1015,21 @@ body {
   .cta-final {
     padding: 60px 15px;
   }
+  .cta-final::before {
+    animation: light-move-mobile 6s linear infinite;
+  }
+
+  @keyframes light-move-mobile {
+    0% {
+      transform: translate(-80%, -80%) scale(1.2);
+    }
+    50% {
+      transform: translate(20%, 20%) scale(1.4);
+    }
+    100% {
+      transform: translate(-80%, -80%) scale(1.2);
+    }
+  }
   .cta-content h2 {
     font-size: 2em;
     text-align: center;
@@ -1051,11 +1109,28 @@ body {
   .footer-logo img {
     width: 140px;
   }
-  .footer-links h3,
-  .footer-contato h3,
-  .footer-social h3 {
-    font-size: 1.1em;
-  }
+.footer-links h3,
+.footer-contato h3,
+.footer-social h3 {
+  position: relative;
+  display: inline-block; /* garante que a barrinha acompanhe o texto */
+  padding-left: 12px;
+  margin: 0 auto 15px; /* centraliza no mobile */
+}
+
+.footer-links h3::before,
+.footer-contato h3::before,
+.footer-social h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  background-color: #a52a2a;
+  border-radius: 2px;
+}
   .footer-social .social-icons {
     justify-content: center;
   }
