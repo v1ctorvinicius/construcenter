@@ -16,466 +16,457 @@
     <link rel="icon" type="image/png" href="img/favicon.jpg" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <section class="hero">
-      <video autoplay muted playsinline id="bg-video">
-        <source src="img/optimized-concat-videos.mp4" type="video/mp4" />
-      </video>
-      <nav class="nav">
-        <img
-          src="img/Logo-221x76.png"
-          width="331"
-          height="114"
-          alt="Construcentro Logo"
-          class="logo"
-        />
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-      <div class="hero-content">
-        <div>
-          <h1 class="typewriter">A Melhor Escolha em Materiais</h1>
-          <p>Construindo seus sonhos há 47 anos com qualidade e variedade.</p>
-        </div>
-        <div>
-          <a href="#contato" class="btn">Fale Conosco</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sobre a Empresa -->
-    <section class="sobre">
-      <div class="sobre-container">
-        <div class="sobre-left">
-          <h2>Sobre a Empresa</h2>
-          <p>
-            Fundada em 1975 como um humilde depósito de bairro, a Construcentro
-            evoluiu ao longo das décadas para se tornar uma referência em
-            soluções completas para indústrias, hospitais, hotéis, construtoras
-            e projetos residenciais.
-          </p>
-          <p>
-            Com 47 anos de história, consolidamos nossa reputação em confiança,
-            transparência e um portfólio diversificado de mais de 15 mil itens,
-            abrangendo desde materiais básicos até acabamentos de alto padrão.
-          </p>
-          <div class="sobre-left-intern">
-            <div class="stats">
-              <div class="stat-item">
-                <span class="stat-number" data-target="47">0</span>+
-                <p>Anos de Experiência</p>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-target="15000">0</span>
-                <p>Itens no Portfólio</p>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-target="1">0</span>
-                <p>Loja em Ribeirão Preto</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sobre-right">
-          <h3>Nossa Força</h3>
-          <p>
-            Nosso diferencial está em um atendimento personalizado e uma equipe
-            técnica altamente qualificada, pronta para atender às suas
-            necessidades com agilidade, expertise e foco total na satisfação do
-            cliente.
-          </p>
-          <div class="sobre-gallery">
-            <img
-              src="img/trabalhadores-1.jpg"
-              alt="Equipe Construcentro"
-              class="sobre-gallery-item"
-            />
-            <img
-              src="img/construcenter-meio-termo.jpeg"
-              alt="Equipe Construcentro"
-              class="sobre-gallery-item"
-            />
-            <img
-              src="img/construcenter-atual.jpeg"
-              alt="Equipe Construcentro"
-              class="sobre-gallery-item"
-            />
-            <img
-              src="img/trabalhadores.png"
-              alt="Equipe Construcentro"
-              class="sobre-gallery-item"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Departamentos -->
-    <section class="departamentos">
-      <h2>Departamentos</h2>
-      <div class="departamentos-container">
-        <div class="departamento-card">
-          <!-- <i class="fas fa-tint" style="color: #2196f3"></i> -->
+    <div class="site-wrapper">
+      <!-- Hero Section -->
+      <section class="hero">
+        <video autoplay muted playsinline loop id="bg-video">
+          <source src="img/optimized-concat-videos.mp4" type="video/mp4" />
+        </video>
+        <nav class="nav">
           <img
-            src="img/material-hidraulico.png"
-            alt="Hidráulica"
-            class="departamento-image"
+            src="img/Logo-221x76.png"
+            width="331"
+            height="114"
+            alt="Construcentro Logo"
+            class="logo"
           />
-          <h3>Hidráulica</h3>
-          <p>Tubos, conexões, torneiras, caixas d’água.</p>
-          <a href="#produtos-hidraulica" class="btn-departamento"
-            >Ver mais produtos</a
-          >
-        </div>
-        <div class="departamento-card">
-          <!-- <i class="fas fa-cubes" style="color: #ff9800"></i> -->
-          <img src="img/cimento.jpg" alt="Básico" class="departamento-image" />
-          <h3>Básico</h3>
-          <p>Areia, cimento, blocos, telhas.</p>
-          <a href="#produtos-basico" class="btn-departamento"
-            >Ver mais produtos</a
-          >
-        </div>
-        <div class="departamento-card">
-          <!-- <i class="fas fa-bolt" style="color: #ffc107"></i> -->
-          <img
-            src="img/material-eletrico.jpg"
-            alt="Elétrica"
-            class="departamento-image"
-          />
-          <h3>Elétrica</h3>
-          <p>Fios, cabos, lâmpadas, disjuntores.</p>
-          <a href="#produtos-eletrica" class="btn-departamento"
-            >Ver mais produtos</a
-          >
-        </div>
-        <div class="departamento-card">
-          <!-- <i class="fas fa-paint-roller" style="color: #4caf50"></i> -->
-          <img
-            src="img/acabamento.png"
-            alt="Acabamento"
-            class="departamento-image"
-          />
-          <h3>Acabamento</h3>
-          <p>Pisos, revestimentos, tintas, louças.</p>
-          <a href="#produtos-acabamento" class="btn-departamento"
-            >Ver mais produtos</a
-          >
-        </div>
-        <div class="departamento-card">
-          <!-- <i class="fas fa-tools" style="color: #f44336"></i> -->
-          <img
-            src="img/ferramentas.webp"
-            alt="Ferramentas"
-            class="departamento-image"
-          />
-          <h3>Ferramentas</h3>
-          <p>Elétricas, manuais e acessórios.</p>
-          <a href="#produtos-ferramentas" class="btn-departamento"
-            >Ver mais produtos</a
-          >
-        </div>
-        <div class="departamento-card">
-          <!-- <i class="fas fa-box" style="color: #9c27b0"></i> -->
-          <img
-            src="img/utilidades.png"
-            alt="Utilidades"
-            class="departamento-image"
-          />
-          <h3>Utilidades</h3>
-          <p>Baldes, EPIs, escadas, organizadores.</p>
-          <a href="#produtos-utilidades" class="btn-departamento"
-            >Ver mais produtos</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Marcas -->
-    <section class="marcas">
-      <h2>As Melhores Marcas Estão Aqui</h2>
-      <div class="marcas-carousel">
-        <div class="marcas-track">
-          <img src="img/marcas-logo-astra.jpg" alt="Astra" />
-          <img src="img/marcas-logo-tecnocuba.jpg" alt="Tecnocuba" />
-          <img src="img/marcas-logo-fani.jpg" alt="Fani" />
-          <img src="img/marcas-logo-docol.jpg" alt="Docol" />
-          <img src="img/marcas-logo-deca.jpg" alt="Deca" />
-          <img src="img/marcas-logo-montes-claros.jpg" alt="Montes Claros" />
-          <img src="img/marcas-logo-atlas.jpg" alt="Atlas" />
-          <img src="img/marcas-logo-viapol.jpg" alt="Viapol" />
-          <img src="img/marcas-logo-vedacit.jpg" alt="Vedacit" />
-          <img src="img/marcas-logo-tramontina.jpg" alt="Tramontina" />
-          <img src="img/marcas-logo-quartzolit.jpg" alt="Quartzolit" />
-          <img src="img/marcas-logo-plastubos.jpg" alt="Plastubos" />
-          <img src="img/marcas-logo-pado.jpg" alt="PADO" />
-          <img src="img/marcas-logo-coral.png" alt="Coral" />
-          <img src="img/marcas-logo-gerdau.png" alt="Gerdau" />
-          <img src="img/marcas-logo-lorenzetti.jpg" alt="Lorenzetti" />
-          <img src="img/marcas-logo-anauger.jpg" alt="Anauger" />
-          <img src="img/marcas-logo-margirius.jpg" alt="Margirius" />
-          <img src="img/marcas-logo-krona.jpg" alt="Krona" />
-          <img src="img/marcas-logo-fortaleza.jpg" alt="Fortaleza" />
-          <img src="img/marcas-logo-embramaco.jpg" alt="Embramaco" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Diferenciais -->
-    <section class="diferenciais">
-      <h2>Nossos Diferenciais</h2>
-      <div class="diferenciais-container">
-        <div class="diferencial-item">
-          <i class="fas fa-boxes"></i>
-          <h3>Variedade Completa</h3>
-          <p>mais de 15 mil produtos para todas as fases da sua obra.</p>
-        </div>
-        <div class="diferencial-item">
-          <i class="fas fa-truck"></i>
-          <h3>Entrega Ágil</h3>
-          <p>Logística eficiente para entregar no prazo que você precisa.</p>
-        </div>
-        <div class="diferencial-item">
-          <i class="fas fa-users-cog"></i>
-          <h3>Equipe Especializada</h3>
-          <p>Atendimento técnico personalizado para suas necessidades.</p>
-        </div>
-        <div class="diferencial-item">
-          <i class="fas fa-trophy"></i>
-          <h3>47 Anos de Confiança</h3>
-          <p>Tradição e qualidade desde 1975.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Depoimentos/Equipe -->
-    <section class="depoimentos">
-      <h2>Depoimentos e Equipe</h2>
-      <div class="depoimentos-container">
-        <div class="testemunhos-grid">
-          <div class="testemunho-item">
-            <img
-              src="img/client1.jpg"
-              alt="Cliente 1"
-              class="testemunho-avatar"
-            />
-            <p>
-              "A Construcentro entregou tudo no prazo com um atendimento
-              impecável!"
-            </p>
-            <h4>João Silva</h4>
-          </div>
-          <div class="testemunho-item">
-            <img
-              src="img/client2.jpg"
-              alt="Cliente 2"
-              class="testemunho-avatar"
-            />
-            <p>"Ótima variedade de produtos e equipe super capacitada!"</p>
-            <h4>Maria Oliveira</h4>
-          </div>
-          <div class="testemunho-item">
-            <img
-              src="img/client3.jpg"
-              alt="Cliente 3"
-              class="testemunho-avatar"
-            />
-            <p>"Minha obra ficou perfeita graças à Construcentro!"</p>
-            <h4>Pedro Santos</h4>
-          </div>
-        </div>
-        <div class="equipe-container">
-          <div class="equipe-slideshow">
-            <img
-              src="img/trabalhadores-2.jpg"
-              alt="Equipe Construcentro"
-              class="equipe-image"
-            />
-            <img
-              src="img/trabalhadores-1.jpg"
-              alt="Equipe 2"
-              class="equipe-image"
-            />
-            <img
-              src="img/construcenter-atual.jpeg"
-              alt="Equipe 3"
-              class="equipe-image"
-            />
-          </div>
-          <h3>Aqui o cliente está no topo da obra.</h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Final -->
-    <section class="cta-final">
-      <div class="cta-content">
-        <h2>Construa com quem entende do assunto.</h2>
-        <h3>Construa com os melhores.</h3>
-        <a href="#contato" class="btn">Fale Conosco</a>
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section class="contato" id="form-contato">
-      <h2>Envie uma mensagem</h2>
-      <div class="contato-container">
-        <!-- Formulário -->
-        <form class="contato-form">
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="nome"><i class="fas fa-user"></i> Nome</label>
-              <input
-                type="text"
-                id="nome"
-                name="nome"
-                placeholder="Digite seu nome"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email"><i class="fas fa-envelope"></i> Email *</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu email"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="telefone"
-                ><i class="fas fa-phone"></i> Telefone</label
-              >
-              <input
-                type="tel"
-                id="telefone"
-                name="telefone"
-                placeholder="(DDD) 99999-9999"
-              />
-            </div>
-
-            <div class="form-group checkbox-group">
-              <label
-                ><input type="checkbox" name="tipo" value="PF" /> Pessoa
-                Física</label
-              >
-              <label
-                ><input type="checkbox" name="tipo" value="PJ" /> Pessoa
-                Jurídica</label
-              >
-            </div>
-          </div>
-
-          <div class="form-group full">
-            <label for="mensagem"
-              ><i class="fas fa-comment-dots"></i> Sua Mensagem *</label
-            >
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              rows="5"
-              placeholder="Escreva sua mensagem..."
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn-enviar">
-            <i class="fas fa-paper-plane"></i> Enviar Mensagem
-          </button>
-        </form>
-
-        <!-- Informações de Contato -->
-        <div class="contato-info">
-          <h3>Informações de Contato</h3>
-          <ul>
-            <li>
-              <i class="fas fa-phone-alt"></i> (16) 3623-0330 | (16) 98128-0900
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:contato@construcentro.com.br"
-                >contato@construcentro.com.br</a
-              >
-            </li>
-            <li>
-              <i class="fas fa-map-marker-alt"></i> Av. Nove de Julho nº 2300 -
-              Jd. América - Ribeirão Preto - SP
-            </li>
-            <li>
-              <i class="fas fa-clock"></i> Seg. a Sex. 07:30 às 18h | Sáb. 08h
-              às 12h
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Localização -->
-    <section class="localizacao" id="contato">
-      <h2>Onde Estamos</h2>
-      <p>Av. Nove de Julho, 2300 - Jardim América, Ribeirão Preto - SP</p>
-      <div class="mapa-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0479638485863!2d-47.80884678541324!3d-21.19621878591154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bc7a35ebf3a7%3A0xf7e8cfae6a6e3f26!2sAv.%20Nove%20de%20Julho%2C%202300%20-%20Jardim%20Am%C3%A9rica%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014020-170!5e0!3m2!1spt-BR!2sbr!4v1699987654321!5m2!1spt-BR!2sbr"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img src="img/Logo-221x76.png" alt="Construcentro Logo" />
-          <p>Construindo seus sonhos há 47 anos com qualidade e confiança.</p>
-        </div>
-
-        <div class="footer-links">
-          <h3>Links Rápidos</h3>
-          <ul>
+          <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#contato">Contato</a></li>
           </ul>
-        </div>
-
-        <div class="footer-contato">
-          <h3>Contato</h3>
-          <p>
-            <i class="fas fa-phone-alt"></i> (16) 3623-0330 | (16) 98128-0900
-          </p>
-          <p><i class="fas fa-envelope"></i> contato@construcentro.com.br</p>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> Av. Nove de Julho nº 2300,
-            Ribeirão Preto - SP
-          </p>
-        </div>
-
-        <div class="footer-social">
-          <h3>Siga-nos</h3>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </nav>
+        <div class="hero-content">
+          <div>
+            <h1 class="typewriter">A Melhor Escolha em Materiais</h1>
+            <p>Construindo seus sonhos há 47 anos com qualidade e variedade.</p>
+          </div>
+          <div>
+            <a href="#contato" class="btn">Fale Conosco</a>
           </div>
         </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 Construcentro. Todos os direitos reservados.</p>
-      </div>
-    </footer>
+      </section>
+      <!-- Sobre a Empresa -->
+      <section class="sobre">
+        <div class="sobre-container">
+          <div class="sobre-left">
+            <h2>Sobre a Empresa</h2>
+            <p>
+              Fundada em 1975 como um humilde depósito de bairro, a
+              Construcentro evoluiu ao longo das décadas para se tornar uma
+              referência em soluções completas para indústrias, hospitais,
+              hotéis, construtoras e projetos residenciais.
+            </p>
+            <p>
+              Com 47 anos de história, consolidamos nossa reputação em
+              confiança, transparência e um portfólio diversificado de mais de
+              15 mil itens, abrangendo desde materiais básicos até acabamentos
+              de alto padrão.
+            </p>
+            <div class="sobre-left-intern">
+              <div class="stats">
+                <div class="stat-item">
+                  <span class="stat-number" data-target="47">0</span>+
+                  <p>Anos de Experiência</p>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="15000">0</span>
+                  <p>Itens no Portfólio</p>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" data-target="1">0</span>
+                  <p>Loja em Ribeirão Preto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sobre-right">
+            <h3>Nossa Força</h3>
+            <p>
+              Nosso diferencial está em um atendimento personalizado e uma
+              equipe técnica altamente qualificada, pronta para atender às suas
+              necessidades com agilidade, expertise e foco total na satisfação
+              do cliente.
+            </p>
+            <div class="sobre-gallery">
+              <img
+                src="img/trabalhadores-1.jpg"
+                alt="Equipe Construcentro"
+                class="sobre-gallery-item"
+              />
+              <img
+                src="img/construcenter-meio-termo.jpeg"
+                alt="Equipe Construcentro"
+                class="sobre-gallery-item"
+              />
+              <img
+                src="img/construcenter-atual.jpeg"
+                alt="Equipe Construcentro"
+                class="sobre-gallery-item"
+              />
+              <img
+                src="img/trabalhadores.png"
+                alt="Equipe Construcentro"
+                class="sobre-gallery-item"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Departamentos -->
+      <section class="departamentos">
+        <h2>Departamentos</h2>
+        <div class="departamentos-container">
+          <div class="departamento-card">
+            <!-- <i class="fas fa-tint" style="color: #2196f3"></i> -->
+            <img
+              src="img/material-hidraulico.png"
+              alt="Hidráulica"
+              class="departamento-image"
+            />
+            <h3>Hidráulica</h3>
+            <p>Tubos, conexões, torneiras, caixas d’água.</p>
+            <a href="#produtos-hidraulica" class="btn-departamento"
+              >Ver mais produtos</a
+            >
+          </div>
+          <div class="departamento-card">
+            <!-- <i class="fas fa-cubes" style="color: #ff9800"></i> -->
+            <img
+              src="img/cimento.jpg"
+              alt="Básico"
+              class="departamento-image"
+            />
+            <h3>Básico</h3>
+            <p>Areia, cimento, blocos, telhas.</p>
+            <a href="#produtos-basico" class="btn-departamento"
+              >Ver mais produtos</a
+            >
+          </div>
+          <div class="departamento-card">
+            <!-- <i class="fas fa-bolt" style="color: #ffc107"></i> -->
+            <img
+              src="img/material-eletrico.jpg"
+              alt="Elétrica"
+              class="departamento-image"
+            />
+            <h3>Elétrica</h3>
+            <p>Fios, cabos, lâmpadas, disjuntores.</p>
+            <a href="#produtos-eletrica" class="btn-departamento"
+              >Ver mais produtos</a
+            >
+          </div>
+          <div class="departamento-card">
+            <!-- <i class="fas fa-paint-roller" style="color: #4caf50"></i> -->
+            <img
+              src="img/acabamento.png"
+              alt="Acabamento"
+              class="departamento-image"
+            />
+            <h3>Acabamento</h3>
+            <p>Pisos, revestimentos, tintas, louças.</p>
+            <a href="#produtos-acabamento" class="btn-departamento"
+              >Ver mais produtos</a
+            >
+          </div>
+          <div class="departamento-card">
+            <!-- <i class="fas fa-tools" style="color: #f44336"></i> -->
+            <img
+              src="img/ferramentas.webp"
+              alt="Ferramentas"
+              class="departamento-image"
+            />
+            <h3>Ferramentas</h3>
+            <p>Elétricas, manuais e acessórios.</p>
+            <a href="#produtos-ferramentas" class="btn-departamento"
+              >Ver mais produtos</a
+            >
+          </div>
+          <div class="departamento-card">
+            <!-- <i class="fas fa-box" style="color: #9c27b0"></i> -->
+            <img
+              src="img/utilidades.png"
+              alt="Utilidades"
+              class="departamento-image"
+            />
+            <h3>Utilidades</h3>
+            <p>Baldes, EPIs, escadas, organizadores.</p>
+            <a href="#produtos-utilidades" class="btn-departamento"
+              >Ver mais produtos</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Marcas -->
+      <section class="marcas">
+        <h2>As Melhores Marcas Estão Aqui</h2>
+        <div class="marcas-carousel">
+          <div class="marcas-track">
+            <img src="img/marcas-logo-astra.jpg" alt="Astra" />
+            <img src="img/marcas-logo-tecnocuba.jpg" alt="Tecnocuba" />
+            <img src="img/marcas-logo-fani.jpg" alt="Fani" />
+            <img src="img/marcas-logo-docol.jpg" alt="Docol" />
+            <img src="img/marcas-logo-deca.jpg" alt="Deca" />
+            <img src="img/marcas-logo-montes-claros.jpg" alt="Montes Claros" />
+            <img src="img/marcas-logo-atlas.jpg" alt="Atlas" />
+            <img src="img/marcas-logo-viapol.jpg" alt="Viapol" />
+            <img src="img/marcas-logo-vedacit.jpg" alt="Vedacit" />
+            <img src="img/marcas-logo-tramontina.jpg" alt="Tramontina" />
+            <img src="img/marcas-logo-quartzolit.jpg" alt="Quartzolit" />
+            <img src="img/marcas-logo-plastubos.jpg" alt="Plastubos" />
+            <img src="img/marcas-logo-pado.jpg" alt="PADO" />
+            <img src="img/marcas-logo-coral.png" alt="Coral" />
+            <img src="img/marcas-logo-gerdau.png" alt="Gerdau" />
+            <img src="img/marcas-logo-lorenzetti.jpg" alt="Lorenzetti" />
+            <img src="img/marcas-logo-anauger.jpg" alt="Anauger" />
+            <img src="img/marcas-logo-margirius.jpg" alt="Margirius" />
+            <img src="img/marcas-logo-krona.jpg" alt="Krona" />
+            <img src="img/marcas-logo-fortaleza.jpg" alt="Fortaleza" />
+            <img src="img/marcas-logo-embramaco.jpg" alt="Embramaco" />
+          </div>
+        </div>
+      </section>
+      <!-- Diferenciais -->
+      <section class="diferenciais">
+        <h2>Nossos Diferenciais</h2>
+        <div class="diferenciais-container">
+          <div class="diferencial-item">
+            <i class="fas fa-boxes"></i>
+            <h3>Variedade Completa</h3>
+            <p>mais de 15 mil produtos para todas as fases da sua obra.</p>
+          </div>
+          <div class="diferencial-item">
+            <i class="fas fa-truck"></i>
+            <h3>Entrega Ágil</h3>
+            <p>Logística eficiente para entregar no prazo que você precisa.</p>
+          </div>
+          <div class="diferencial-item">
+            <i class="fas fa-users-cog"></i>
+            <h3>Equipe Especializada</h3>
+            <p>Atendimento técnico personalizado para suas necessidades.</p>
+          </div>
+          <div class="diferencial-item">
+            <i class="fas fa-trophy"></i>
+            <h3>47 Anos de Confiança</h3>
+            <p>Tradição e qualidade desde 1975.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Depoimentos/Equipe -->
+      <section class="depoimentos">
+        <h2>Depoimentos e Equipe</h2>
+        <div class="depoimentos-container">
+          <div class="testemunhos-grid">
+            <div class="testemunho-item">
+              <img
+                src="img/cliente-1.jpg"
+                alt="Cliente 1"
+                class="testemunho-avatar"
+              />
+              <p>
+                "A Construcentro entregou tudo no prazo com um atendimento
+                impecável!"
+              </p>
+              <h4>João Silva</h4>
+            </div>
+            <div class="testemunho-item">
+              <img
+                src="img/cliente-3.png"
+                alt="Cliente 2"
+                class="testemunho-avatar"
+              />
+              <p>"Ótima variedade de produtos e equipe super capacitada!"</p>
+              <h4>Maria Oliveira</h4>
+            </div>
+            <div class="testemunho-item">
+              <img
+                src="img/cliente-2.jpg"
+                alt="Cliente 3"
+                class="testemunho-avatar"
+              />
+              <p>"Minha obra ficou perfeita graças à Construcentro!"</p>
+              <h4>Pedro Santos</h4>
+            </div>
+          </div>
+          <div class="equipe-container">
+            <div class="equipe-slideshow">
+              <img
+                src="img/trabalhadores-2.jpg"
+                alt="Equipe Construcentro"
+                class="equipe-image"
+              />
+              <img
+                src="img/trabalhadores-1.jpg"
+                alt="Equipe 2"
+                class="equipe-image"
+              />
+              <img
+                src="img/construcenter-atual.jpeg"
+                alt="Equipe 3"
+                class="equipe-image"
+              />
+            </div>
+            <h3>Aqui o cliente está no topo da obra.</h3>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Final -->
+      <section class="cta-final">
+        <div class="cta-content">
+          <h2>Construa com quem entende do assunto.</h2>
+          <h3>Construa com os melhores.</h3>
+          <a href="#contato" class="btn">Fale Conosco</a>
+        </div>
+      </section>
+      <!-- Contato -->
+      <section class="contato" id="form-contato">
+        <h2>Envie uma mensagem</h2>
+        <div class="contato-container">
+          <!-- Formulário -->
+          <form class="contato-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nome"><i class="fas fa-user"></i> Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email"
+                  ><i class="fas fa-envelope"></i> Email *</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Digite seu email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="telefone"
+                  ><i class="fas fa-phone"></i> Telefone</label
+                >
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(DDD) 99999-9999"
+                />
+              </div>
+              <div class="form-group checkbox-group">
+                <label
+                  ><input type="checkbox" name="tipo" value="PF" /> Pessoa
+                  Física</label
+                >
+                <label
+                  ><input type="checkbox" name="tipo" value="PJ" /> Pessoa
+                  Jurídica</label
+                >
+              </div>
+            </div>
+            <div class="form-group full">
+              <label for="mensagem"
+                ><i class="fas fa-comment-dots"></i> Sua Mensagem *</label
+              >
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                placeholder="Escreva sua mensagem..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">
+              <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+          </form>
+          <!-- Informações de Contato -->
+          <div class="contato-info">
+            <h3>Informações de Contato</h3>
+            <ul>
+              <li>
+                <i class="fas fa-phone-alt"></i> (16) 3623-0330 | (16)
+                98128-0900
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:contato@construcentro.com.br"
+                  >contato@construcentro.com.br</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Av. Nove de Julho nº 2300
+                - Jd. América - Ribeirão Preto - SP
+              </li>
+              <li>
+                <i class="fas fa-clock"></i> Seg. a Sex. 07:30 às 18h | Sáb. 08h
+                às 12h
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Localização -->
+      <section class="localizacao" id="contato">
+        <h2>Onde Estamos</h2>
+        <p>Av. Nove de Julho, 2300 - Jardim América, Ribeirão Preto - SP</p>
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0479638485863!2d-47.80884678541324!3d-21.19621878591154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bc7a35ebf3a7%3A0xf7e8cfae6a6e3f26!2sAv.%20Nove%20de%20Julho%2C%202300%20-%20Jardim%20Am%C3%A9rica%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014020-170!5e0!3m2!1spt-BR!2sbr!4v1699987654321!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="img/Logo-221x76.png" alt="Construcentro Logo" />
+            <p>Construindo seus sonhos há 47 anos com qualidade e confiança.</p>
+          </div>
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-contato">
+            <h3>Contato</h3>
+            <p>
+              <i class="fas fa-phone-alt"></i> (16) 3623-0330 | (16) 98128-0900
+            </p>
+            <p><i class="fas fa-envelope"></i> contato@construcentro.com.br</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Av. Nove de Julho nº 2300,
+              Ribeirão Preto - SP
+            </p>
+          </div>
+          <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Construcentro. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="app.js"></script>
