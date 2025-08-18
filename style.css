@@ -798,7 +798,6 @@ body {
     cursor: pointer;
     margin-right: 20px;
   }
-
   /* Hero */
   .hero {
     height: 100vh;
@@ -806,10 +805,20 @@ body {
     box-sizing: border-box;
   }
   .typewriter {
-    font-size: 1.8em;
-    width: 90vw;
-    border-right: 0.1em solid #a52a2a; /* Restore cursor */
+    font-size: 1.2em !important;
+    border-right: 0.1em solid #a52a2a;
+    max-width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
     animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%;
+    }
   }
 
   .hero-content p {
