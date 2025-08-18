@@ -1,11 +1,11 @@
 // Lista de vídeos para o hero
 const videos = [
-  "img/hero-video-3-opt.mp4",
-  "img/hero-video-4-opt.mp4",
-  "img/hero-video-5-opt.mp4",
-  "img/hero-video-1-opt.mp4",
-  "img/hero-video-0-opt.mp4",
-  "img/hero-video-2-opt.mp4",
+  "img/hero-video-3.mp4",
+  "img/hero-video-4.mp4",
+  "img/hero-video-5.mp4",
+  "img/hero-video-1.mp4",
+  "img/hero-video-0.mp4",
+  "img/hero-video-2.mp4",
 ];
 
 const videoElement = document.getElementById("bg-video");
