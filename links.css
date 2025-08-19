@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.linktree-container {
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.linktree-container:hover {
+  transform: scale(1.02);
+}
+
+.profile img.logo {
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+.profile h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.profile p {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, #a52a2a, #cf4840);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.link-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.link-btn i {
+  font-size: 1.2em;
+}
+
+.link-btn.whatsapp {
+  background: linear-gradient(135deg, #25d366, #20b857);
+}
+
+
+/* Versão Mobile */
+@media (max-width: 600px) {
+  .linktree-container {
+    max-width: 95%;
+    padding: 25px 15px;
+  }
+
+  .profile img.logo {
+    width: 120px; /* logo um pouco menor */
+  }
+
+  .profile h1 {
+    font-size: 1.5em;
+  }
+
+  .profile p {
+    font-size: 0.9em;
+  }
+
+  .links {
+    gap: 12px;
+  }
+
+  .link-btn {
+    font-size: 1em;
+    padding: 16px;      /* botões mais "gordos" pro dedo */
+    width: 100%;        /* botões ocupam toda a largura */
+  }
+
+  .link-btn i {
+    font-size: 1.1em;
+  }
+}
