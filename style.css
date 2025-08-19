@@ -33,7 +33,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
   z-index: 1;
 }
 .hero video {
@@ -388,7 +388,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 .diferencial-item h3 {
   font-size: 1.5em;
@@ -490,7 +490,7 @@ body {
   min-height: 45vh;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .equipe-slideshow .equipe-image {
   position: absolute;
@@ -718,7 +718,7 @@ body {
 .contato-form input:focus,
 .contato-form textarea:focus {
   border-color: #cf4840;
-  box-shadow: 0 0 0 3px rgba(207,72,64,0.15);
+  box-shadow: 0 0 0 3px rgba(207, 72, 64, 0.15);
   outline: none;
 }
 .form-group input:focus + label,
@@ -790,7 +790,7 @@ body {
   font-size: 0.95em;
 }
 .footer-container {
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -933,6 +933,13 @@ body {
     height: 100vh;
     min-height: 92vh;
     box-sizing: border-box;
+  }
+
+  .hero-buttons a {
+    min-width: 30vw;
+    width: 40vw;
+    text-wrap: nowrap;
+    max-width: 50vw;
   }
   .typewriter {
     font-size: 1.2em !important;
@@ -1079,13 +1086,13 @@ body {
   .depoimentos-container {
     flex-direction: column;
   }
-  .testemunhos-grid{
+  .testemunhos-grid {
     width: 100%;
   }
-  .equipe-container{
+  .equipe-container {
     width: 100%;
   }
-  
+
   .testemunho-item {
     padding: 15px;
   }
@@ -1359,13 +1366,13 @@ body {
   border-radius: 50%;
   text-align: center;
   font-size: 30px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s, background 0.3s;
-  text-decoration: none;;
+  text-decoration: none;
 }
 .whatsapp-float:hover {
   transform: scale(1.1);
