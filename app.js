@@ -159,5 +159,41 @@ window.addEventListener("DOMContentLoaded", () => {
     setInterval(showNextEquipe, 4000); // Troca a cada 4s
   }
 
-  // setInterval(showNextEquipe, 4000);
+  // Formulário -> WhatsApp
+  const contatoForm = document.querySelector(".contato-form");
+
+  if (contatoForm) {
+    contatoForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value || "Não informado";
+      const email = document.getElementById("email").value || "Não informado";
+      const telefone =
+        document.getElementById("telefone").value || "Não informado";
+      const mensagem = document.getElementById("mensagem").value || "";
+
+      const texto = `Olá, meu nome é ${nome}.
+Email: ${email}
+Telefone: ${telefone}
+
+Mensagem:
+${mensagem}`;
+
+      const url = `https://wa.me/5598986281919?text=${encodeURIComponent(
+        texto
+      )}`;
+      window.open(url, "_blank");
+    });
+  }
+
+  // Botão de copiar mensagens prontas
+  document.querySelectorAll(".btn-copiar").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const texto = btn.previousElementSibling.textContent;
+      navigator.clipboard.writeText(texto).then(() => {
+        btn.textContent = "Copiado!";
+        setTimeout(() => (btn.textContent = "Copiar"), 2000);
+      });
+    });
+  });
 });
