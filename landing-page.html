@@ -389,14 +389,21 @@
               href="https://wa.me/5516981280900"
               target="_blank"
               rel="noopener"
-              class="btn-departamento"
-              aria-label="Falar no WhatsApp sobre Soluções para Condomínios"
+              class="btn-entrega"
+              aria-label="Consultar entrega no WhatsApp"
               data-wa-text="Olá! Vi no site a seção de Entrega Rápida e Confiável. Preciso de materiais de construção para uma obra em Ribeirão Preto. Vocês entregam em residências/condomínios? Qual o prazo de entrega e custo para minha região? Há opção de entrega agendada e condições especiais para pedidos maiores? Obrigado!"
-              >Saiba mais</a
             >
+              Consulte a entrega no seu endereço
+            </a>
           </div>
           <div class="entrega-imagem">
-            <img src="img/entregas-2.jpeg" alt="Entrega Construcentro" />
+            <div class="entrega-slideshow">
+              <img
+                src="img/entregas-2.jpeg"
+                alt="Caminhão descarregando materiais de construção"
+                class="entrega-image active"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -637,6 +644,8 @@
         target="_blank"
         rel="noopener"
         aria-label="Fale conosco no WhatsApp"
+        data-wa-text="Gostaria de consultar condições de entrega e orçamento na Construcentro.  
+Poderia me ajudar?"
       >
         <i class="fab fa-whatsapp"></i>
       </a>
@@ -650,7 +659,7 @@
       document.addEventListener(
         "click",
         function (e) {
-          const a = e.target.closest("a.btn-departamento[data-wa-text]");
+          const a = e.target.closest("a[data-wa-text]");
           if (!a) return;
           // monta a URL com encode da mensagem longa
           const base = a.getAttribute("href") || "https://wa.me/5516981280900";

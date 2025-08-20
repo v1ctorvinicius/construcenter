@@ -99,25 +99,11 @@ window.addEventListener("DOMContentLoaded", () => {
     distance: "50px",
   });
 
-  // Animações da seção Entrega
-  ScrollReveal().reveal(".entrega-texto", {
-    delay: 200,
-    origin: "left",
-    distance: "50px",
-    duration: 1000,
-  });
-  ScrollReveal().reveal(".entrega-imagem", {
-    delay: 400,
-    origin: "right",
-    distance: "50px",
-    duration: 1000,
-  });
-
-  // Efeito Typewriter com JS (suporta wrap e cursor inline)
+  
   const typewriter = document.querySelector(".typewriter");
   if (typewriter) {
     const text = typewriter.getAttribute("data-text");
-    typewriter.textContent = ""; // Limpa o texto inicial
+    typewriter.textContent = "";
 
     const textSpan = document.createElement("span");
     textSpan.classList.add("typewriter-text");
@@ -125,20 +111,20 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const cursorSpan = document.createElement("span");
     cursorSpan.classList.add("typewriter-cursor");
-    cursorSpan.textContent = ""; // Vazio para não adicionar espaço extra
+    cursorSpan.textContent = "";
     typewriter.appendChild(cursorSpan);
 
     let index = 0;
     const typingInterval = setInterval(() => {
       if (index < text.length) {
-        textSpan.textContent += text.charAt(index); // Adiciona letra por letra no span de texto
+        textSpan.textContent += text.charAt(index);
         index++;
       } else {
         clearInterval(typingInterval);
         // Opcional: remover o cursor após terminar
         // cursorSpan.style.display = 'none';
       }
-    }, 100); // Velocidade: 100ms por letra (~4s para 40 caracteres)
+    }, 100);
   }
 
   // Slideshow da equipe
@@ -153,5 +139,5 @@ window.addEventListener("DOMContentLoaded", () => {
     equipeImgs[equipeIndex].classList.add("active");
   }
 
-  setInterval(showNextEquipe, 4000); // Troca a cada 4s
+  setInterval(showNextEquipe, 4000);
 });
