@@ -99,6 +99,20 @@ window.addEventListener("DOMContentLoaded", () => {
     distance: "50px",
   });
 
+  // Animações da seção Entrega
+  ScrollReveal().reveal(".entrega-texto", {
+    delay: 200,
+    origin: "left",
+    distance: "50px",
+    duration: 1000,
+  });
+  ScrollReveal().reveal(".entrega-imagem", {
+    delay: 400,
+    origin: "right",
+    distance: "50px",
+    duration: 1000,
+  });
+
   // Efeito Typewriter com JS (suporta wrap e cursor inline)
   const typewriter = document.querySelector(".typewriter");
   if (typewriter) {
@@ -128,7 +142,9 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   // Slideshow da equipe
-  const equipeImgs = document.querySelectorAll(".equipe-slideshow .equipe-image");
+  const equipeImgs = document.querySelectorAll(
+    ".equipe-slideshow .equipe-image"
+  );
   let equipeIndex = 0;
 
   function showNextEquipe() {

@@ -18,7 +18,7 @@
   <body>
     <div class="site-wrapper">
       <!-- Hero Section -->
-      <section class="hero">
+      <section class="hero" id="home">
         <video autoplay muted playsinline loop id="bg-video">
           <source src="img/optimized-concat-videos.mp4" type="video/mp4" />
         </video>
@@ -48,24 +48,36 @@
             </p>
           </div>
           <div class="hero-buttons">
-            <a href="landing-page.html" target="_blank" class="btn">
+            <a
+              href="landing-page.html"
+              target="_blank"
+              rel="noopener"
+              class="btn"
+            >
               <i class="fas fa-globe"></i> Site Oficial
             </a>
             <a
               href="https://www.mercadolivre.com.br/pampa/profile"
               target="_blank"
+              rel="noopener"
               class="btn"
             >
               <i class="fas fa-shopping-cart"></i> Mercado Livre
             </a>
-            <a href="https://ecommerce.com" target="_blank" class="btn">
+            <a
+              href="https://ecommerce.com"
+              target="_blank"
+              rel="noopener"
+              class="btn"
+            >
               <i class="fas fa-store"></i> E-commerce
             </a>
           </div>
         </div>
       </section>
+
       <!-- Sobre a Empresa -->
-      <section class="sobre">
+      <section class="sobre" id="sobre">
         <div class="sobre-container">
           <div class="sobre-left">
             <h2>Sobre a Empresa</h2>
@@ -121,7 +133,7 @@
               />
               <img
                 src="img/construcenter-atual.jpeg"
-                alt="Equipe Construcentro"
+                alt="Equipe Construcentro atual"
                 class="sobre-gallery-item"
               />
               <img
@@ -133,10 +145,12 @@
           </div>
         </div>
       </section>
+
       <!-- Departamentos -->
       <section class="departamentos">
         <h2>Departamentos</h2>
         <div class="departamentos-container">
+          <!-- Hidráulica -->
           <div class="departamento-card">
             <img
               src="img/material-hidraulico.jpg"
@@ -145,10 +159,18 @@
             />
             <h3>Hidráulica</h3>
             <p>Tubos, conexões, torneiras, caixas d’água.</p>
-            <a href="#produtos-hidraulica" class="btn-departamento"
-              >Ver mais produtos</a
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Hidráulica"
+              data-wa-text="Olá! Acabei de ver no site a área de Hidráulica e vi que vocês oferecem variedade em tubos e torneiras. Preciso de opções para uma obra residencial — pode me indicar modelos, faixas de preço e disponibilidade? Se possível, informe também prazo de entrega e se há opção de instalação. Obrigado!"
+              >Saiba mais</a
             >
           </div>
+
+          <!-- Básico -->
           <div class="departamento-card">
             <img
               src="img/material-basico.webp"
@@ -157,10 +179,18 @@
             />
             <h3>Básico</h3>
             <p>Areia, cimento, blocos, telhas.</p>
-            <a href="#produtos-basico" class="btn-departamento"
-              >Ver mais produtos</a
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Materiais Básicos"
+              data-wa-text="Oi! Estou vendo materiais básicos no site (cimento, areia, blocos, telhas). Preciso de quantidades médias para uma casa — pode me passar opções de marcas, preços por unidade/volume e prazo de entrega para Ribeirão Preto? Qual a melhor opção custo/benefício atualmente e há desconto para compra em volume?"
+              >Saiba mais</a
             >
           </div>
+
+          <!-- Elétrica -->
           <div class="departamento-card">
             <img
               src="img/material-eletrico.jpg"
@@ -169,10 +199,18 @@
             />
             <h3>Elétrica</h3>
             <p>Fios, cabos, lâmpadas, disjuntores.</p>
-            <a href="#produtos-eletrica" class="btn-departamento"
-              >Ver mais produtos</a
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Elétrica"
+              data-wa-text="Olá! Vi no site a parte de Elétrica e notei que vocês trabalham com marcas consolidadas. Vou fazer a instalação elétrica de uma residência — pode me recomendar cabos, disjuntores e demais componentes apropriados + faixa de preço? Aceitam pagamento parcelado e fazem nota fiscal para pessoa física/empresa?"
+              >Saiba mais</a
             >
           </div>
+
+          <!-- Acabamento -->
           <div class="departamento-card">
             <img
               src="img/acabamento.png"
@@ -181,10 +219,18 @@
             />
             <h3>Acabamento</h3>
             <p>Pisos, revestimentos, tintas, louças.</p>
-            <a href="#produtos-acabamento" class="btn-departamento"
-              >Ver mais produtos</a
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Acabamento"
+              data-wa-text="Oi! Vi as opções de acabamento no site e gostei da variedade de pisos e tintas. Preciso de algo resistente para cozinha e banheiro — pode me indicar linhas disponíveis, cores mais usadas e preço por m²? Vocês têm amostras ou fotos reais e qual o prazo para entrega?"
+              >Saiba mais</a
             >
           </div>
+
+          <!-- Ferramentas -->
           <div class="departamento-card">
             <img
               src="img/ferramentas.webp"
@@ -193,10 +239,18 @@
             />
             <h3>Ferramentas</h3>
             <p>Elétricas, manuais e acessórios.</p>
-            <a href="#produtos-ferramentas" class="btn-departamento"
-              >Ver mais produtos</a
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Ferramentas"
+              data-wa-text="Olá! Estou vendo as ferramentas no site. Vou equipar uma equipe para obra e preciso de uma serra elétrica e kit de ferramentas manuais. Quais modelos vocês recomendam para uso profissional, quais as garantias e que promoções existem agora? Também preciso saber prazo de entrega e condições comerciais para compra em quantidade."
+              >Saiba mais</a
             >
           </div>
+
+          <!-- Utilidades -->
           <div class="departamento-card">
             <img
               src="img/utilidades.png"
@@ -205,10 +259,18 @@
             />
             <h3>Utilidades</h3>
             <p>Baldes, EPIs, escadas, organizadores.</p>
-            <a href="#produtos-utilidades" class="btn-departamento"
-              >Ver mais produtos</a
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Utilidades e EPIs"
+              data-wa-text="Oi! Vi no site a seção de utilidades e EPIs. Preciso de capacetes, luvas e cintos para uma equipe — têm kits e pronta entrega? Quais marcas vocês recomendam para uso contínuo e qual o prazo para pedidos maiores? Há desconto por volume ou contrato de fornecimento recorrente?"
+              >Saiba mais</a
             >
           </div>
+
+          <!-- Indústria -->
           <div class="departamento-card">
             <img
               src="img/industria.jpg"
@@ -217,10 +279,18 @@
             />
             <h3>Soluções para Indústria</h3>
             <p>Materiais e equipamentos para projetos industriais.</p>
-            <a href="#produtos-industria" class="btn-departamento"
-              >Ver mais produtos</a
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Soluções para Indústria"
+              data-wa-text="Olá! Sou da área de compras de uma indústria e vi no site a seção de soluções industriais. Precisamos de cotação para fornecimento recorrente. Vocês trabalham com entrega programada, nota fiscal eletrônica e condições comerciais para empresas? Posso enviar escopo e quantidades para avaliação."
+              >Saiba mais</a
             >
           </div>
+
+          <!-- Condomínios -->
           <div class="departamento-card">
             <img
               src="img/condominio.jpeg"
@@ -229,12 +299,19 @@
             />
             <h3>Soluções para Condomínios</h3>
             <p>Produtos para manutenção e reformas em condomínios.</p>
-            <a href="#produtos-condominios" class="btn-departamento"
-              >Ver mais produtos</a
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Soluções para Condomínios"
+              data-wa-text="Oi! Estou procurando materiais para manutenção em condomínio (reformas e pequenas manutenções). Vi no site essa linha — vocês fazem orçamentos para condomínios e entregam diretamente no local? Como funciona visita técnica/medição e há condições especiais para condomínios (prazo, desconto)?"
+              >Saiba mais</a
             >
           </div>
         </div>
       </section>
+
       <!-- Marcas -->
       <section class="marcas">
         <h2>As Melhores Marcas Estão Aqui</h2>
@@ -264,6 +341,7 @@
           </div>
         </div>
       </section>
+
       <!-- Diferenciais -->
       <section class="diferenciais">
         <h2>Nossos Diferenciais</h2>
@@ -290,6 +368,39 @@
           </div>
         </div>
       </section>
+
+      <!-- Entrega -->
+      <section class="entrega">
+        <div class="entrega-container">
+          <div class="entrega-texto">
+            <h2>Entrega Rápida e Confiável</h2>
+            <p>
+              Atendemos Ribeirão Preto e toda região com entregas ágeis e
+              seguras. Seja na sua residência, empresa, shopping ou condomínio,
+              levamos qualidade e confiança até você.
+            </p>
+            <ul class="entrega-lista">
+              <li><i class="fas fa-home"></i> Residências</li>
+              <li><i class="fas fa-building"></i> Empresas e Indústrias</li>
+              <li><i class="fas fa-store"></i> Shoppings e Condomínios</li>
+              <li><i class="fas fa-clock"></i> Entrega Agendada</li>
+            </ul>
+            <a
+              href="https://wa.me/5516981280900"
+              target="_blank"
+              rel="noopener"
+              class="btn-departamento"
+              aria-label="Falar no WhatsApp sobre Soluções para Condomínios"
+              data-wa-text="Olá! Vi no site a seção de Entrega Rápida e Confiável. Preciso de materiais de construção para uma obra em Ribeirão Preto. Vocês entregam em residências/condomínios? Qual o prazo de entrega e custo para minha região? Há opção de entrega agendada e condições especiais para pedidos maiores? Obrigado!"
+              >Saiba mais</a
+            >
+          </div>
+          <div class="entrega-imagem">
+            <img src="img/entregas-2.jpeg" alt="Entrega Construcentro" />
+          </div>
+        </div>
+      </section>
+
       <!-- Depoimentos/Equipe -->
       <section class="depoimentos">
         <h2>Depoimentos e Equipe</h2>
@@ -348,14 +459,16 @@
           </div>
         </div>
       </section>
+
       <!-- CTA Final -->
       <section class="cta-final">
         <div class="cta-content">
-          <h2>Construa com quem entende do assunto.</h2>
+          <h2>Tá com obra? Vem pra Construcentro!</h2>
           <h3>Construa com os melhores.</h3>
           <a href="#contato" class="btn">Fale Conosco</a>
         </div>
       </section>
+
       <!-- Contato -->
       <section class="contato" id="form-contato">
         <h2>Envie uma mensagem</h2>
@@ -388,8 +501,12 @@
                 <label for="telefone"
                   ><i class="fas fa-phone"></i> Telefone</label
                 >
-                <input type="tel" id="telefone.Line 92: Column 19
-                name="telefone" placeholder="(DDD) 99999-9999" />
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(DDD) 99999-9999"
+                />
               </div>
               <div class="form-group checkbox-group">
                 <label
@@ -418,8 +535,9 @@
               <i class="fas fa-paper-plane"></i> Enviar Mensagem
             </button>
           </form>
+
           <!-- Informações de Contato -->
-          <div class="contato-info">
+          <div class="contato-info" id="contato">
             <h3>Informações de Contato</h3>
             <ul>
               <li>
@@ -437,15 +555,16 @@
                 - Jd. América - Ribeirão Preto - SP
               </li>
               <li>
-                <i class="fas fa-clock"></i> Seg. a Sex. 07:30 às 18h | Sáb. 08h
+                <i class="fas fa-clock"></i> Seg. a Sex. 07:00 às 18h | Sáb. 08h
                 às 12h
               </li>
             </ul>
           </div>
         </div>
       </section>
+
       <!-- Localização -->
-      <section class="localizacao" id="contato">
+      <section class="localizacao">
         <h2>Onde Estamos</h2>
         <p>Av. Nove de Julho, 2300 - Jardim América, Ribeirão Preto - SP</p>
         <div class="mapa-container">
@@ -461,6 +580,7 @@
           </iframe>
         </div>
       </section>
+
       <!-- Footer -->
       <footer class="footer">
         <div class="footer-container">
@@ -486,13 +606,23 @@
               <i class="fas fa-map-marker-alt"></i> Av. Nove de Julho nº 2300,
               Ribeirão Preto - SP
             </p>
+            <p>
+              <i class="fas fa-clock"></i> Seg. a Sex. 07:00 às 18h | Sáb. 08h
+              às 12h
+            </p>
           </div>
           <div class="footer-social">
             <h3>Siga-nos</h3>
             <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -500,10 +630,12 @@
           <p>&copy; 2025 Construcentro. Todos os direitos reservados.</p>
         </div>
       </footer>
+
       <a
         href="https://wa.me/5516981280900"
         class="whatsapp-float"
         target="_blank"
+        rel="noopener"
         aria-label="Fale conosco no WhatsApp"
       >
         <i class="fab fa-whatsapp"></i>
@@ -512,5 +644,26 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="app.js"></script>
+
+    <!-- Encaminha a mensagem certa para o WhatsApp (encode seguro) -->
+    <script>
+      document.addEventListener(
+        "click",
+        function (e) {
+          const a = e.target.closest("a.btn-departamento[data-wa-text]");
+          if (!a) return;
+          // monta a URL com encode da mensagem longa
+          const base = a.getAttribute("href") || "https://wa.me/5516981280900";
+          const msg = a.getAttribute("data-wa-text") || "";
+          const url =
+            base +
+            (base.includes("?") ? "&" : "?") +
+            "text=" +
+            encodeURIComponent(msg);
+          a.setAttribute("href", url);
+        },
+        { passive: true }
+      );
+    </script>
   </body>
 </html>
