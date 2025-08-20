@@ -1147,7 +1147,7 @@ body {
     width: 100%;
   }
   .equipe-container {
-    width: 100%;
+    width: 100% !important;
   }
 
   .testemunho-item {
@@ -1368,6 +1368,10 @@ body {
   }
   .equipe-container h3 {
     font-size: 1.3em;
+    
+  }
+  .equipe-container {
+    width: 100% !important;
   }
   /* CTA Final */
   .cta-final {
