@@ -1280,6 +1280,13 @@ body {
   .footer-social .social-icons {
     justify-content: center;
   }
+  .mensagens-prontas {
+    margin-top: 5vh !important;
+    margin :auto;
+    min-width: 30%;
+    max-width: 80%;
+    width: 40%;
+  }
 }
 
 /* Ajustes adicionais para telas menores (abaixo de 480px) */
@@ -1416,6 +1423,13 @@ body {
   }
   .footer-logo img {
     width: 120px;
+  }
+  .mensagens-prontas{
+    margin-top: 5vh !important;
+    margin :auto;
+    min-width: 30%;
+    max-width: 80%;
+    width: 100% !important;
   }
 }
 
