@@ -66,12 +66,14 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // Animação para os depoimentos e equipe
-  sr.reveal(".testemunho-item", {
+  // Animação para os depoimentos
+  sr.reveal(".depoimentos-carousel", {
     delay: 200,
     interval: 150,
     origin: "left",
     distance: "30px",
   });
+
   sr.reveal(".equipe-container", {
     delay: 200,
     origin: "right",
@@ -99,7 +101,6 @@ window.addEventListener("DOMContentLoaded", () => {
     distance: "50px",
   });
 
-  
   const typewriter = document.querySelector(".typewriter");
   if (typewriter) {
     const text = typewriter.getAttribute("data-text");
@@ -126,7 +127,22 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     }, 100);
   }
+  // Carrossel de depoimentos
+  const depoimentos = document.querySelectorAll(".depoimento");
+  const dots = document.querySelectorAll(".depoimentos-nav .dot");
+  let depoimentoIndex = 0;
 
+  function showNextDepoimento() {
+    depoimentos[depoimentoIndex].classList.remove("active");
+    dots[depoimentoIndex].classList.remove("active");
+    depoimentoIndex = (depoimentoIndex + 1) % depoimentos.length;
+    depoimentos[depoimentoIndex].classList.add("active");
+    dots[depoimentoIndex].classList.add("active");
+  }
+
+  if (depoimentos.length > 0) {
+    setInterval(showNextDepoimento, 5000); // Troca a cada 5s
+  }
   // Slideshow da equipe
   const equipeImgs = document.querySelectorAll(
     ".equipe-slideshow .equipe-image"
@@ -139,5 +155,9 @@ window.addEventListener("DOMContentLoaded", () => {
     equipeImgs[equipeIndex].classList.add("active");
   }
 
-  setInterval(showNextEquipe, 4000);
+  if (equipeImgs.length > 0) {
+    setInterval(showNextEquipe, 4000); // Troca a cada 4s
+  }
+
+  // setInterval(showNextEquipe, 4000);
 });

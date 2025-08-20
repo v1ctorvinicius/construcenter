@@ -413,6 +413,37 @@ body {
   background-color: #ffffff;
   text-align: center;
 }
+.depoimentos-carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 20vh;
+  height: 30vh;
+  max-width: 50vh;
+}
+.depoimento {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: none;
+}
+.depoimento.active {
+  display: block;
+}
+.depoimento .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+.depoimento p {
+  font-style: italic;
+  color: #444;
+}
+
 .depoimentos h2 {
   font-size: 2.5em;
   color: #4a2c2a;
@@ -424,6 +455,24 @@ body {
   margin: 0 auto;
   gap: 30px;
   flex-wrap: wrap;
+}
+.depoimentos-nav {
+  margin-top: 20px;
+}
+
+.depoimentos-nav .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.depoimentos-nav .dot.active {
+  background: #cf4840;
 }
 .testemunhos-grid {
   flex: 1;
@@ -478,6 +527,9 @@ body {
   text-align: center;
 }
 .equipe-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   max-height: 45vh;
   min-height: 45vh;
@@ -1387,7 +1439,6 @@ body {
   background: #20b857;
 }
 
-
 /* Entrega */
 .entrega {
   padding: 60px 20px;
@@ -1493,4 +1544,32 @@ body {
   .entrega-slideshow {
     height: 200px;
   }
+}
+
+.avatar-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff; /* Cor de fundo do círculo */
+  color: white; /* Cor da letra */
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-transform: uppercase;
+  margin: 0 auto 10px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007bff;
 }
