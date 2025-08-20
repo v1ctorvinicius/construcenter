@@ -179,7 +179,7 @@ Telefone: ${telefone}
 Mensagem:
 ${mensagem}`;
 
-      const url = `https://wa.me/5598986281919?text=${encodeURIComponent(
+      const url = `https://wa.me/5516981280900?text=${encodeURIComponent(
         texto
       )}`;
       window.open(url, "_blank");
