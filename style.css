@@ -219,7 +219,8 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .stat-item {
-  margin: 20px;
+  margin: 1vw;
+  max-width: 25%;
 }
 .stat-number {
   font-size: 2.8em;
@@ -299,6 +300,8 @@ body {
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 .departamento-card:hover {
   transform: translateY(-10px) scale(1.02);
@@ -319,6 +322,10 @@ body {
   width: 100%;
   height: 150px;
   object-fit: cover;
+}
+.departamento-card h3,
+.departamento-card p {
+  flex-grow: 0;
 }
 .departamento-card h3 {
   font-size: 1.8em;
@@ -341,6 +348,8 @@ body {
   border-radius: 5px;
   margin-bottom: 20px;
   transition: background-color 0.3s ease;
+  margin-top: auto;
+  align-self: center;
 }
 .btn-departamento:hover {
   background-color: #cf4840;
@@ -987,10 +996,11 @@ body {
   }
   .stats {
     flex-direction: column;
-    padding: 15px;
+    padding: 2vh;
   }
   .stat-item {
-    margin: 10px 0;
+    margin: 1vh 0;
+    max-width: 100%;
   }
   .stat-number {
     font-size: 2em;
