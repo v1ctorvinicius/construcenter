@@ -113,19 +113,17 @@ body {
   display: inline-block;
   font-size: 3.5em;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* border-right: 0.15em solid #a52a2a; */
+  white-space: pre-wrap;
+  /* animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; */
+}
+
+.typewriter-cursor {
   border-right: 0.15em solid #a52a2a;
-  white-space: nowrap;
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: blink-caret 0.75s step-end infinite;
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 70vw;
-  }
-}
+
 @keyframes blink-caret {
   from,
   to {
@@ -943,20 +941,17 @@ body {
   }
   .typewriter {
     font-size: 1.2em !important;
-    border-right: 0.1em solid #a52a2a;
+    /* border-right: 0.1em solid #a52a2a; */
     max-width: 85%;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    /* overflow: hidden; */
+    white-space: pre-wrap;
+    /* animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite; */
   }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 90%;
-    }
+  .typewriter-cursor {
+    border-right: 0.1em solid #a52a2a;
+    animation: blink-caret 0.75s step-end infinite;
   }
+
   .hero-content p {
     font-size: 0.9em;
     margin: 10px 15px;
@@ -1234,6 +1229,9 @@ body {
   .typewriter {
     font-size: 1.5em;
     width: 95vw;
+    /* border-right: 0.08em solid #a52a2a; */
+  }
+  .typewriter-cursor {
     border-right: 0.08em solid #a52a2a;
   }
   .hero-content p {
