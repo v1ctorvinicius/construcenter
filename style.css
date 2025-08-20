@@ -414,11 +414,15 @@ body {
   text-align: center;
 }
 .depoimentos-carousel {
+  /* precisa ser uma cor legal */
+  background-color: #d3cfcf;
+  border-radius: 10px;
   position: relative;
   max-width: 700px;
   margin: 0 auto;
   overflow: hidden;
-  min-height: 20vh;
+  min-height: 40vh;
+  max-height: 100%;
   height: 30vh;
   max-width: 50vh;
 }
@@ -1282,7 +1286,7 @@ body {
   }
   .mensagens-prontas {
     margin-top: 5vh !important;
-    margin :auto;
+    margin: auto;
     min-width: 30%;
     max-width: 80%;
     width: 40%;
@@ -1375,7 +1379,6 @@ body {
   }
   .equipe-container h3 {
     font-size: 1.3em;
-    
   }
   .equipe-container {
     width: 100% !important;
@@ -1424,9 +1427,9 @@ body {
   .footer-logo img {
     width: 120px;
   }
-  .mensagens-prontas{
+  .mensagens-prontas {
     margin-top: 5vh !important;
-    margin :auto;
+    margin: auto;
     min-width: 30%;
     max-width: 80%;
     width: 100% !important;
@@ -1592,10 +1595,9 @@ body {
   background-color: #007bff;
 }
 
-
 .mensagens-prontas {
   margin-top: 5vh !important;
-  margin :auto;
+  margin: auto;
   min-width: 30%;
   max-width: 80%;
   width: 40%;
