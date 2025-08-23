@@ -45,7 +45,7 @@ body {
   width: auto;
   height: auto;
   z-index: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 .nav {
   top: 0;
@@ -59,14 +59,15 @@ body {
 .logo {
   margin: 0 2vw;
 }
-.nav-links {
+.nav-links {  
   list-style: none;
   display: flex;
-  margin: 2vw;
+  justify-content: space-between;
+  margin: 1vw;
   padding: 0;
 }
 .nav-links li {
-  margin: 0 2vw;
+  margin: 0 1vw;
 }
 .nav-links a {
   color: #ffffff;
